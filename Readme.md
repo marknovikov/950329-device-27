@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Марк Новиков](https://up.htmlacademy.ru/htmlcss/27/user/950329).
-* Наставник: `Неизвестно`.
+- Студент: [Марк Новиков](https://up.htmlacademy.ru/htmlcss/27/user/950329).
+- Наставник: `[Денис Власов](https://htmlacademy.ru/profile/amaringo)`.
 
 ---
 
