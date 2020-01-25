@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Девайс | Главная</title>
 </head>
 
@@ -10,55 +11,53 @@
   <header class="page-header">
     <h1 class="visually-hidden">Интернет магазин "Девайс"</h1>
 
-    <a class="page-header__logo logo" href="">
+    <a class="page-header__logo logo" href="#">
       <img class="logo__image" src="https://via.placeholder.com/163x35" srcset="" alt="DEVICE" title="Девайс" width="163" height="35">
     </a>
 
     <form method="get" action="">
-      <label for="search" class="visually-hidden"></label>
+      <label for="search" class="visually-hidden">Поиск по сайту</label>
       <input id="search" name="search" class="search" type="search" placeholder="Поиск по сайту">
     </form>
 
     <div class="page-header__button-wrapper button-wrapper">
-      <button class="login__button">Войти</button>
-      <button class="compare__button">Сравнить</button>
-      <button class="cart__button">Корзина</button>
+      <button class="login__button" type="button">Войти</button>
+      <button class="compare__button" type="button">Сравнить</button>
+      <button class="cart__button" type="button">Корзина</button>
     </div>
 
     <div class="page-header__catalog catalog">
-      <button class="catalog__button">Каталог товаров</button>
-      <div class="catalog__wrapper">
-        <ul class="catalog__items">
-          <li class="catalog__item">
-            <a href="">Виртуальная реальность</a>
-          </li>
-          <li class="catalog__item">
-            <a href="">Моноподы для селфи</a>
-          </li>
-          <li class="catalog__item">
-            <a href="">Экшн-камеры</a>
-          </li>
-        </ul>
-        <ul class="catalog__items">
-          <li class="catalog__item">
-            <a href="">Фитнес-браслеты</a>
-          </li>
-          <li class="catalog__item">
-            <a href="">Умные часы</a>
-          </li>
-        </ul>
-        <ul class="catalog__items">
-          <li class="catalog__item">
-            <a href="">Квадрокоптеры</a>
-          </li>
-        </ul>
-      </div>
+      <button class="catalog__button" type="button">Каталог товаров</button>
+      <ul class="catalog__items">
+        <li class="catalog__item">
+          <a href="#">Виртуальная реальность</a>
+        </li>
+        <li class="catalog__item">
+          <a href="#">Моноподы для селфи</a>
+        </li>
+        <li class="catalog__item">
+          <a href="#">Экшн-камеры</a>
+        </li>
+      </ul>
+      <ul class="catalog__items">
+        <li class="catalog__item">
+          <a href="#">Фитнес-браслеты</a>
+        </li>
+        <li class="catalog__item">
+          <a href="#">Умные часы</a>
+        </li>
+      </ul>
+      <ul class="catalog__items">
+        <li class="catalog__item">
+          <a href="#">Квадрокоптеры</a>
+        </li>
+      </ul>
     </div>
 
     <nav class="page-header__navigation navigation">
-      <a class="navigation__item" href="" title="">Доставка</a>
-      <a class="navigation__item" href="" title="">Гарантия</a>
-      <a class="navigation__item" href="" title="">Оплата</a>
+      <a class="navigation__item" href="#" title="">Доставка</a>
+      <a class="navigation__item" href="#" title="">Гарантия</a>
+      <a class="navigation__item" href="#" title="">Оплата</a>
     </nav>
   </header>
   <main class="page-main">
@@ -68,44 +67,34 @@
     <section class="page-main__categories categories">
       <h2 class="visually-hidden">Категории товаров</h2>
       <ul class="categories__items">
-        <li class="categories__item">
-          <a href="">
-            <h3 class="visually-hidden">Виртуальная реальность</h3>
-            <img class="categories__icon" src="https://via.placeholder.com/160x160" srcset="" alt="Виртуальная реальность" title="Виртуальная реальность"
-              width="160" height="160">
+        <li>
+          <a href="#" class="categories__item categories__item--virtual-reality">
+            Виртуальная реальность
           </a>
         </li>
         <li class="categories__item">
-          <a href="">
-            <h3 class="visually-hidden">Моноподы для селфи</h3>
-            <img class="categories__icon" src="https://via.placeholder.com/160x160" srcset="" alt="Моноподы для селфи" title="Моноподы для селфи" width="160"
-              height="160">
+          <a href="#" class="categories__item categories__item--monopodes">
+            Моноподы для селфи
           </a>
         </li>
         <li class="categories__item">
-          <a href="">
-            <h3 class="visually-hidden">Экшн-камеры</h3>
-            <img class="categories__icon" src="https://via.placeholder.com/160x160" srcset="" alt="Экшн-камеры" title="Экшн-камеры" width="160" height="160">
+          <a href="#" class="categories__item categories__item--action-cameras">
+            Экшн-камеры
           </a>
         </li>
         <li class="categories__item">
-          <a href="">
-            <h3 class="visually-hidden">Фитнес-браслеты</h3>
-            <img class="categories__icon" src="https://via.placeholder.com/160x160" srcset="" alt="Фитнес-браслеты" title="Фитнес-браслеты" width="160"
-              height="160">
+          <a href="#" class="categories__item categories__item--fitness-bands">
+            Фитнес-браслеты
           </a>
         </li>
         <li class="categories__item">
-          <a href="">
-            <h3 class="visually-hidden">Умные часы</h3>
-            <img class="categories__icon" src="https://via.placeholder.com/160x160" srcset="" alt="Умные часы" title="Умные часы" width="160" height="160">
+          <a href="#" class="categories__item categories__item--smart-watches">
+            Умные часы
           </a>
         </li>
         <li class="categories__item">
-          <a href="">
-            <h3 class="visually-hidden">Квадрокоптеры</h3>
-            <img class="categories__icon" src="https://via.placeholder.com/160x160" srcset="" alt="Квадрокоптеры" title="Квадрокоптеры" width="160"
-              height="160">
+          <a href="#" class="categories__item categories__item--quadrocopters">
+            Квадрокоптеры
           </a>
         </li>
       </ul>
@@ -119,22 +108,22 @@
       <h2 class="visually-hidden">Производители</h2>
       <ul class="vendors__items">
         <li>
-          <a class="vendors__item" href="">
+          <a class="vendors__item" href="#">
             <img class="vendors__image" src="https://via.placeholder.com/260x100" srcset="" alt="" title="" width="260" height="100">
           </a>
         </li>
         <li>
-          <a class="vendors__item" href="">
+          <a class="vendors__item" href="#">
             <img class="vendors__image" src="https://via.placeholder.com/260x100" srcset="" alt="" title="" width="260" height="100">
           </a>
         </li>
         <li>
-          <a class="vendors__item" href="">
+          <a class="vendors__item" href="#">
             <img class="vendors__image" src="https://via.placeholder.com/260x100" srcset="" alt="" title="" width="260" height="100">
           </a>
         </li>
         <li>
-          <a class="vendors__item" href="">
+          <a class="vendors__item" href="#">
             <img class="vendors__image" src="https://via.placeholder.com/260x100" srcset="" alt="" title="" width="260" height="100">
           </a>
         </li>
@@ -149,13 +138,13 @@
       <p class="text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
       <ul class="about__shipping shipping">
         <li class="shipping__item">
-          <a class="shipping__link" href="">Деловые Линии</a>
+          <a class="shipping__link" href="#">Деловые Линии</a>
         </li>
         <li class="shipping__item">
-          <a class="shipping__link" href="">Автотрейдинг</a>
+          <a class="shipping__link" href="#">Автотрейдинг</a>
         </li>
         <li class="shipping__item">
-          <a class="shipping__link" href="">ЖелДорЭкспедиция</a>
+          <a class="shipping__link" href="#">ЖелДорЭкспедиция</a>
         </li>
       </ul>
     </section>
@@ -163,41 +152,45 @@
     <section class="page-main__contacts contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <p class="text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-      <iframe class="map" width="560" height="222"></iframe>
-      <a class="contacts__link" href="">Напишите нам</a>
+      <a class="contacts__map map">
+        <img class="map__image" src="https://via.placeholder.com/560x222" srcset="" alt="" title="" width="560" height="222">
+      </a>
+      <a class="contacts__mail" href="mailto:#">Напишите нам</a>
 
     </section>
   </main>
   <footer class="page-footer">
-    <a class="page-footer__logo logo" href="">
+    <a class="page-footer__logo logo" href="#">
       <img class="logo__image" src="https://via.placeholder.com/163x35" srcset="" alt="DEVICE" title="Девайс" width="163" height="35">
     </a>
 
     <div class="page-footer__button-wrapper button-wrapper">
-      <button class="login__button">Войти</button>
-      <button class="compare__button">Сравнить</button>
-      <button class="cart__button">Корзина</button>
+      <button class="login__button" type="button">Войти</button>
+      <button class="compare__button" type="button">Сравнить</button>
+      <button class="cart__button" type="button">Корзина</button>
     </div>
 
     <nav class="page-footer__navigation navigation">
-      <a class="navigation__item" href="" title="">Доставка</a>
-      <a class="navigation__item" href="" title="">Гарантия</a>
-      <a class="navigation__item" href="" title="">Оплата</a>
+      <a class="navigation__item" href="#" title="">Доставка</a>
+      <a class="navigation__item" href="#" title="">Гарантия</a>
+      <a class="navigation__item" href="#" title="">Оплата</a>
     </nav>
 
     <address class="page-footer__address address">г. Москва, ул. Строителей, 15</address>
-    <address class="page-footer__phone address">Тел.: +7 (495) 495-95-95</address>
+    <address class="page-footer__phone address">
+      <a class="telephone-link" href="tel:+7-495-495-95-95">Тел.: +7 (495) 495-95-95</a>
+    </address>
 
     <section class="page-footer__social social">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <a class="social__link social__link--facebook" href="" title=""></a>
-      <a class="social__link social__link--instagram" href="" title=""></a>
-      <a class="social__link social__link--twitter" href="" title=""></a>
+      <a class="social__link social__link--facebook" href="#" title="">Facebook</a>
+      <a class="social__link social__link--instagram" href="#" title="">Instagram</a>
+      <a class="social__link social__link--twitter" href="#" title="">Twitter</a>
     </section>
 
     <section class="page-footer__copyright copyright">
       <h2 class="visually-hidden">Правообладатели</h2>
-      <a class="copyright__link copyright__link--htmlacademy" href=""></a>
+      <a class="copyright__link copyright__link--htmlacademy" href="#">HTML Academy</a>
     </section>
   </footer>
 </body>
