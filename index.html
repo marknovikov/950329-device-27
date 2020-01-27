@@ -82,8 +82,140 @@
   <main class="page-main">
     <h1 class="visually-hidden">Интернет магазин "Девайс"</h1>
 
-    <section class="page-main__slider slider">
+    <section class="page-main__promo promo slider">
       <h2 class="visually-hidden">Предложения</h2>
+
+      <ol class="promo__items slider__items">
+        <li class="slider__item promo">
+          <h3 class="visually-hidden">Палка для селфи 8,5 м</h3>
+
+          <img class="promo__pic" src="https://via.placeholder.com/384x486" width="384" height="486" alt="Палка для селфи" />
+
+          <p class="promo__slogan">
+            Делай селфи,<br />
+            как Бен Стиллер!
+          </p>
+
+          <p class="promo__text">
+            Самая длинная палка для селфи доступна в нашем магазине.
+            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+          </p>
+
+          <table class="promo__specs specs">
+            <caption class="visually-hidden">Технические характеристики</caption>
+
+            <thead class="specs__header">
+              <tr>
+                <th class="specs__key">Длина палки</th>
+                <th class="specs__key">Вес палки</th>
+                <th class="specs__key">Материал</th>
+              </tr>
+            </thead>
+            <tbody class="specs__body">
+              <tr>
+                <td class="specs__value">8,5 м</td>
+                <td class="specs__value">5 кг</td>
+                <td class="specs__value">Карбон</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <a class="promo__link" href="#">Подробнее</a>
+
+          <p class="promo__ordinal">01</p>
+        </li>
+
+        <li class="slider__item promo" hidden>
+          <h3 class="visually-hidden">Фитнес-браслет</h3>
+
+          <img class="promo__pic" src="https://via.placeholder.com/384x486" width="384" height="486" alt="Фитнес-браслет" />
+
+          <p class="promo__slogan">
+            Худеем<br />
+            правильно!
+          </p>
+
+          <p class="promo__text">
+            Мотивирующие фитнес-браслеты помогут найти в себе силы
+            не пропускать занятия и соблюдать диету.
+          </p>
+
+          <table class="promo__specs specs">
+            <caption class="visually-hidden">Технические характеристики</caption>
+
+            <thead class="specs__header">
+              <tr>
+                <th class="specs__key">Без подзарядки</th>
+              </tr>
+            </thead>
+            <tbody class="specs__body">
+              <tr>
+                <td class="specs__value">48 часов</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <a class="promo__link" href="#">Подробнее</a>
+
+          <p class="promo__ordinal">02</p>
+        </li>
+
+        <li class="slider__item promo" hidden>
+          <h3 class="visually-hidden">Боевой квадрокоптер</h3>
+
+          <img class="promo__pic" src="https://via.placeholder.com/384x486" width="384" height="486" alt="Палка для селфи" />
+
+          <p class="promo__slogan">
+            Порхает как бабочка,<br />
+            жалит как плчела!
+          </p>
+
+          <p class="promo__text">
+            Этот обычный, на первый взгляд, квадрокоптер оснащен
+            мощным лазером, замаскированным под стандартную камеру.
+          </p>
+
+          <table class="promo__specs specs">
+            <caption class="visually-hidden">Технические характеристики</caption>
+
+            <thead class="specs__header">
+              <tr>
+                <th class="specs__key">Дальность полета</th>
+                <th class="specs__key">Радиус поражения</th>
+              </tr>
+            </thead>
+            <tbody class="specs__body">
+              <tr>
+                <td class="specs__value">800 м</td>
+                <td class="specs__value">50 м</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <a class="promo__link" href="#">Подробнее</a>
+
+          <p class="promo__ordinal">03</p>
+        </li>
+      </ol>
+
+      <h3 class="visually-hidden">Переключатели предложений</h3>
+
+      <ol class="promo__controls slider__controls">
+        <li>
+          <input class="promo__control slider__control" name="promo__control" value="1" id="promo__control--1" type="radio" checked />
+          <label class="promo__label slider__label" for="promo__control--1">1</label>
+        </li>
+
+        <li>
+          <input class="promo__control slider__control" name="promo__control" value="2" id="promo__control--2" type="radio" />
+          <label class="promo__label slider__label" for="promo__control--2">2</label>
+        </li>
+
+        <li>
+          <input class="promo__control slider__control" name="promo__control" value="3" id="promo__control--3" type="radio" />
+          <label class="promo__label slider__label" for="promo__control--3">3</label>
+        </li>
+      </ol>
     </section>
 
     <section class="page-main__categories categories">
@@ -123,8 +255,55 @@
       </ul>
     </section>
 
-    <section class="page-main__services services">
+    <section class="page-main__services services slider">
       <h2 class="visually-hidden">Услуги</h2>
+
+      <ol class="services__items slider__items">
+        <li class="service slider__item">
+          <h3 class="service__title">Доставка</h3>
+
+          <p class="service__text">
+            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+          </p>
+        </li>
+
+        <li class="service slider__item" hidden>
+          <h3 class="service__title">Гарантия</h3>
+
+          <p class="service__text">
+            Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+            Товар, не дом, конечно же.
+          </p>
+        </li>
+
+        <li class="service slider__item" hidden>
+          <h3 class="service__title">Кредит</h3>
+
+          <p class="service__text">
+            Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+            условия кредита. Выгодные для нашего банка, разумеется.
+          </p>
+        </li>
+      </ol>
+
+      <h3 class="visually-hidden">Переключатели услуг</h3>
+
+      <ol class="services__controls slider__controls">
+        <li>
+          <input class="services__control slider__control" name="services__control" value="shipping" id="services__control--shipping" type="radio" checked />
+          <label class="services__label slider__label" for="services__control--shipping">Доставка</label>
+        </li>
+
+        <li>
+          <input class="services__control slider__control" name="services__control" value="warranty" id="services__control--warranty" type="radio" />
+          <label class="services__label slider__label" for="services__control--warranty">Гарантия</label>
+        </li>
+
+        <li>
+          <input class="services__control slider__control" name="services__control" value="credit" id="services__control--credit" type="radio" />
+          <label class="services__label slider__label" for="services__control--credit">Кредит</label>
+        </li>
+      </ol>
     </section>
 
     <section class="page-main__vendors vendors">
