@@ -16,10 +16,10 @@
       </a>
 
       <form method="get" action="#">
-        <label class="visually-hidden">
+        <label class="visually-hidden" for="site-search">
           Поиск по сайту
-          <input name="search" class="search" type="search" placeholder="Поиск по сайту">
         </label>
+        <input name="search" class="search" id="site-search" type="search" placeholder="Поиск по сайту">
       </form>
 
       <div class="page-header__links links">
@@ -202,18 +202,15 @@
 
       <ol class="promo__controls slider__controls">
         <li>
-          <input class="promo__control slider__control" name="promo__control" value="1" id="promo__control--1" type="radio" checked>
-          <label class="promo__label slider__label" for="promo__control--1">1</label>
+          <button class="promo__control slider__control slider__control--1" type="button">1</button>
         </li>
 
         <li>
-          <input class="promo__control slider__control" name="promo__control" value="2" id="promo__control--2" type="radio">
-          <label class="promo__label slider__label" for="promo__control--2">2</label>
+          <button class="promo__control slider__control slider__control--2" type="button">2</button>
         </li>
 
         <li>
-          <input class="promo__control slider__control" name="promo__control" value="3" id="promo__control--3" type="radio">
-          <label class="promo__label slider__label" for="promo__control--3">3</label>
+          <button class="promo__control slider__control slider__control--3" type="button">3</button>
         </li>
       </ol>
     </section>
@@ -290,18 +287,15 @@
 
       <ol class="services__controls slider__controls">
         <li>
-          <input class="services__control slider__control" name="services__control" value="shipping" id="services__control--shipping" type="radio" checked>
-          <label class="services__label slider__label" for="services__control--shipping">Доставка</label>
+          <button class="services__control slider__control slider__control--shipping" type="button">Доставка</button>
         </li>
 
         <li>
-          <input class="services__control slider__control" name="services__control" value="warranty" id="services__control--warranty" type="radio">
-          <label class="services__label slider__label" for="services__control--warranty">Гарантия</label>
+          <button class="services__control slider__control slider__control--warranty" type="button">Гарантия</button>
         </li>
 
         <li>
-          <input class="services__control slider__control" name="services__control" value="credit" id="services__control--credit" type="radio">
-          <label class="services__label slider__label" for="services__control--credit">Кредит</label>
+          <button class="services__control slider__control slider__control--credit" type="button">Кредит</button>
         </li>
       </ol>
     </section>
@@ -395,7 +389,7 @@
 
     <address class="page-footer__address address">г. Москва, ул. Строителей, 15</address>
     <address class="page-footer__phone address">
-      <a class="address__phone" href="tel:+7-495-495-95-95">Тел.: +7 (495) 495-95-95</a>
+      <a class="address__phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
     </address>
 
     <section class="page-footer__social social">
