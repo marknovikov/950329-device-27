@@ -154,27 +154,22 @@
 
         <ul class="sorting__types">
           <li>
-            <input class="sorting__type sorting__type--price" name="sorting__type" value="price" id="sorting__type--price" type="radio" checked>
-            <label class="visually-hidden" for="sorting__type--price">По цене</label>
+            <button class="sorting__type sorting__type--price" type="button">По цене</button>
           </li>
           <li>
-            <input class="sorting__type sorting__type--kind" name="sorting__type" value="kind" id="sorting__type--kind" type="radio">
-            <label class="visually-hidden" for="sorting__type--kind">По типу</label>
+            <button class="sorting__type sorting__type--kind" type="button">По типу</button>
           </li>
           <li>
-            <input class="sorting__type sorting__type--popularity" name="sorting__type" value="popularity" id="sorting__type--popularity" type="radio">
-            <label class="visually-hidden" for="sorting__type--popularity">По популярности</label>
+            <button class="sorting__type sorting__type--popularity" type="button">По популярности</button>
           </li>
         </ul>
 
         <ul class="sorting__toggles">
           <li>
-            <input class="sorting__toggle sorting__toggle--asc" id="sorting__toggle--asc" type="radio" name="sorting__toggle" value="asc">
-            <label class="visually-hidden" for="sorting__toggle--asc">По возрастанию</label>
+            <button class="sorting__toggle sorting__toggle--asc" type="button">По возрастанию</button>
           </li>
           <li>
-            <input class="sorting__toggle sorting__toggle--desc" id="sorting__toggle--desc" type="radio" name="sorting__toggle" value="desc" checked>
-            <label class="visually-hidden" for="sorting__toggle--desc">По убыванию</label>
+            <button class="sorting__toggle sorting__toggle--desc" type="button">По убыванию</button>
           </li>
         </ul>
       </div>
@@ -246,25 +241,22 @@
 
         <ol class="pagination__controls">
           <li>
-            <button class="pagination__control pagination__control--prev" type="button">Назад</button>
+            <a class="pagination__control pagination__control--prev" href="#">Назад</a>
           </li>
           <li>
-            <button class="pagination__control pagination__control--next" type="button">Вперед</button>
+            <a class="pagination__control pagination__control--next" href="#">Вперед</a>
           </li>
         </ol>
 
         <ol class="pagination__pages">
-          <li class="pagination__page">
-            <input class="visually-hidden" name="page" value="1" id="pagination__page--1" type="radio" checked>
-            <label class="pagination__label" for="pagination__page--1">1</label>
+          <li>
+            <a class="pagination__page pagination__page--1 pagination__page--active" href="#">1</a>
           </li>
-          <li class="pagination__page">
-            <input class="visually-hidden" name="page" value="2" id="pagination__page--2" type="radio">
-            <label class="pagination__label" for="pagination__page--2">2</label>
+          <li>
+            <a class="pagination__page pagination__page--2" href="#">2</a>
           </li>
-          <li class="pagination__page">
-            <input class="visually-hidden" name="page" value="3" id="pagination__page--3" type="radio">
-            <label class="pagination__label" for="pagination__page--3">3</label>
+          <li>
+            <a class="pagination__page pagination__page--3" href="#">3</a>
           </li>
         </ol>
       </div>
