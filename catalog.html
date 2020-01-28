@@ -9,143 +9,98 @@
 
 <body>
   <header class="page-header">
-    <h1 class="visually-hidden">Интернет магазин "Девайс"</h1>
+    <nav class="page-header__navigation site-navigation">
 
-    <a class="page-header__logo logo" href="#">
-      <img class="logo__image" src="https://via.placeholder.com/163x35" srcset="" alt="DEVICE" title="Девайс" width="163" height="35">
-    </a>
+      <a href="index.html" class="page-header__logo logo">
+        <img class="logo__image" src="https://via.placeholder.com/163x35" alt="Девайс" title="Девайс" width="163" height="35">
+      </a>
 
-    <form method="get" action="">
-      <label for="search" class="visually-hidden">Поиск по сайту</label>
-      <input id="search" name="search" class="search" type="search" placeholder="Поиск по сайту">
-    </form>
+      <form method="get" action="#">
+        <label class="visually-hidden" for="site-search">
+          Поиск по сайту
+        </label>
+        <input name="search" class="search" id="site-search" type="search" placeholder="Поиск по сайту">
+      </form>
 
-    <div class="page-header__buttons">
-      <button class="login" type="button">Войти</button>
-      <button class="compare" type="button">Сравнить</button>
-      <button class="cart" type="button">Корзина</button>
-    </div>
+      <div class="page-header__links links">
+        <ul class="user-navigation">
+          <li>
+            <a class="link link--profile" href="#">Валентин Петухов</a>
+          </li>
+          <li>
+            <a class="link link--logout" href="#">Выйти</a>
+          </li>
+        </ul>
 
-    <div class="page-header__catalog catalog">
-      <button class="catalog__button" type="button">Каталог товаров</button>
-      <ul class="catalog__items">
-        <li class="catalog__item">
-          <a href="#">Виртуальная реальность</a>
+        <a class="link link--compare" href="#">Сравнить</a>
+        <a class="link link--cart" href="#">Корзина</a>
+      </div>
+
+      <div class="site-navigation__catalog catalog">
+        <button class="catalog__button site-navigation__item" type="button">Каталог товаров</button>
+        <ul class="catalog__items">
+          <li>
+            <a class="catalog__item" href="#">Виртуальная реальность</a>
+          </li>
+          <li>
+            <a class="catalog__item" href="#">Моноподы для селфи</a>
+          </li>
+          <li>
+            <a class="catalog__item" href="#">Экшн-камеры</a>
+          </li>
+          <li>
+            <ul class="catalog__items">
+              <li>
+                <a class="catalog__item" href="#">Фитнес-браслеты</a>
+              </li>
+              <li>
+                <a class="catalog__item" href="#">Умные часы</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="catalog__items">
+              <li>
+                <a class="catalog__item" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="site-navigation__items">
+        <li>
+          <a class="site-navigation__item" href="#">Доставка</a>
         </li>
-        <li class="catalog__item">
-          <a href="#">Моноподы для селфи</a>
+        <li>
+          <a class="site-navigation__item" href="#">Гарантия</a>
         </li>
-        <li class="catalog__item">
-          <a href="#">Экшн-камеры</a>
+        <li>
+          <a class="site-navigation__item" href="#">Оплата</a>
         </li>
       </ul>
-      <ul class="catalog__items">
-        <li class="catalog__item">
-          <a href="#">Фитнес-браслеты</a>
-        </li>
-        <li class="catalog__item">
-          <a href="#">Умные часы</a>
-        </li>
-      </ul>
-      <ul class="catalog__items">
-        <li class="catalog__item">
-          <a href="#">Квадрокоптеры</a>
-        </li>
-      </ul>
-    </div>
-
-    <nav class="page-header__navigation navigation">
-      <a class="navigation__item" href="#" title="">Доставка</a>
-      <a class="navigation__item" href="#" title="">Гарантия</a>
-      <a class="navigation__item" href="#" title="">Оплата</a>
     </nav>
   </header>
 
   <main class="page-main">
-    <div class="breadcrumbs">
-      <a href="#">Главная</a>
-      <a href="#">Каталог товаров</a>
-      <a href="#">Моноподы для селфи</a>
-    </div>
+    <h1 class="visually-hidden">Каталог товаров</h1>
 
-    <section class="products">
-      <h2 class="visually-hidden">Моноподы для селфи</h2>
-      <div class="products__sorting sorting">
-        <h3>Сортировка:</h3>
-        <button class="sorting__toggle sorting__toggle--active" type="button">По цене</button>
-        <button class="sorting__toggle" type="button">По типу</button>
-        <button class="sorting__toggle" type="button">По популярности</button>
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="index.html">Главная</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#">Каталог товаров</a>
+      </li>
+      <li class="breadcrumbs__item">
+        Моноподы для селфи
+      </li>
+    </ul>
 
-        <button class="sorting__asc sorting__toggle" type="button">По возрастанию</button>
-        <button class="sorting__desc sorting__toggle sorting__toggle--active" type="button">По убыванию</button>
-      </div>
-
-      <div class="products__inner">
-        <article class="product">
-          <h3>Любительская селфи-палка</h3>
-          <p>500 руб.</p>
-          <div class="product__inner">
-            <img class="product__thumb" src="https://via.placeholder.com/360x379" srcset="" alt="" title="" width="360" height="379">
-            <div class="product__buttons">
-              <button class="add-to-cart-button" type="button">В корзину</button>
-              <button class="compare-button" type="button">Добавить к сравнению</button>
-            </div>
-          </div>
-        </article>
-
-        <article class="product">
-          <h3>Профессиональная селфи-палка </h3>
-          <p>1 500 руб.</p>
-          <div class="product__inner">
-            <img class="product__thumb" src="https://via.placeholder.com/360x379" srcset="" alt="Профессиональная селфи-палка "
-              title="Профессиональная селфи-палка " width="360" height="379">
-            <div class="product__buttons">
-              <button class="add-to-cart-button" type="button">В корзину</button>
-              <button class="compare-button" type="button">Добавить к сравнению</button>
-            </div>
-          </div>
-        </article>
-
-        <article class="product">
-          <h3>Непотопляемая селфи-палка</h3>
-          <p>2 500 руб.</p>
-          <div class="product__inner">
-            <img class="product__thumb" src="https://via.placeholder.com/360x379" srcset="" alt="Непотопляемая селфи-палка" title="Непотопляемая селфи-палка"
-              width="360" height="379">
-            <div class="product__buttons">
-              <button class="add-to-cart-button" type="button">В корзину</button>
-              <button class="compare-button" type="button">Добавить к сравнению</button>
-            </div>
-          </div>
-        </article>
-
-        <article class="product">
-          <h3>Селфи-палка «Следуй за мной»</h3>
-          <p>4 900 руб.</p>
-          <div class="product__inner">
-            <img class="product__thumb" src="https://via.placeholder.com/360x379" srcset="" alt="Селфи-палка «Следуй за мной»"
-              title="Селфи-палка «Следуй за мной»" width="360" height="379">
-            <div class="product__buttons">
-              <button class="add-to-cart-button" type="button">В корзину</button>
-              <button class="compare-button" type="button">Добавить к сравнению</button>
-            </div>
-          </div>
-        </article>
-
-        <div class="products__pagination pagination">
-          <button class="pagination__control pagination__control--active" type="button">Назад</button>
-          <button class="pagination__control pagination__control--active" type="button">1</button>
-          <button class="pagination__control" type="button">2</button>
-          <button class="pagination__control" type="button">3</button>
-          <button class="pagination__control pagination__control--active" type="button">Вперед</button>
-        </div>
-      </div>
-    </section>
-
-    <aside class="filters">
+    <section class="filters">
       <h2>Фильтр</h2>
 
-      <form>
+      <form method="get" action="#">
         <fieldset class="filters__filter filter">
           <legend class="filter__name">Стоимость</legend>
         </fieldset>
@@ -188,40 +143,180 @@
 
         <button class="filters__button button" type="submit">Показать</button>
       </form>
-    </aside>
+
+    </section>
+
+    <section class="products">
+      <h2 class="visually-hidden">Моноподы для селфи</h2>
+
+      <div class="sorting">
+        <h2 class="sorting__title">Сортировка</h2>
+
+        <ul class="sorting__types">
+          <li>
+            <button class="sorting__type sorting__type--price" type="button">По цене</button>
+          </li>
+          <li>
+            <button class="sorting__type sorting__type--kind" type="button">По типу</button>
+          </li>
+          <li>
+            <button class="sorting__type sorting__type--popularity" type="button">По популярности</button>
+          </li>
+        </ul>
+
+        <ul class="sorting__toggles">
+          <li>
+            <button class="sorting__toggle sorting__toggle--asc" type="button">По возрастанию</button>
+          </li>
+          <li>
+            <button class="sorting__toggle sorting__toggle--desc" type="button">По убыванию</button>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="products__items">
+        <li class="products__item product">
+          <h3>Любительская селфи-палка</h3>
+
+          <div class="product__inner">
+            <img class="product__thumb" src="https://via.placeholder.com/360x379" alt="Любительская селфи-палка" title="Любительская селфи-палка" width="360"
+              height="379">
+            <div class="product__buttons">
+              <button class="product__to-cart-button" type="button">В корзину</button>
+              <button class="product__compare-button" type="button">Добавить к сравнению</button>
+            </div>
+          </div>
+
+          <p>500 руб.</p>
+        </li>
+
+        <li class="products__item product">
+          <h3>Профессиональная селфи-палка</h3>
+
+          <div class="product__inner">
+            <img class="product__thumb" src="https://via.placeholder.com/360x379" alt="Профессиональная селфи-палка " title="Профессиональная селфи-палка "
+              width="360" height="379">
+            <div class="product__buttons">
+              <button class="product__to-cart-button" type="button">В корзину</button>
+              <button class="product__compare-button" type="button">Добавить к сравнению</button>
+            </div>
+          </div>
+
+          <p>1 500 руб.</p>
+        </li>
+
+        <li class="products__item product">
+          <h3>Непотопляемая селфи-палка</h3>
+
+          <div class="product__inner">
+            <img class="product__thumb" src="https://via.placeholder.com/360x379" alt="Непотопляемая селфи-палка" title="Непотопляемая селфи-палка" width="360"
+              height="379">
+            <div class="product__buttons">
+              <button class="product__to-cart-button" type="button">В корзину</button>
+              <button class="product__compare-button" type="button">Добавить к сравнению</button>
+            </div>
+          </div>
+
+          <p>2 500 руб.</p>
+        </li>
+
+        <li class="products__item product">
+          <h3>Селфи-палка «Следуй за мной»</h3>
+
+          <div class="product__inner">
+            <img class="product__thumb" src="https://via.placeholder.com/360x379" alt="Селфи-палка «Следуй за мной»" title="Селфи-палка «Следуй за мной»"
+              width="360" height="379">
+            <div class="product__buttons">
+              <button class="product__to-cart-button" type="button">В корзину</button>
+              <button class="product__compare-button" type="button">Добавить к сравнению</button>
+            </div>
+          </div>
+
+          <p>4 900 руб.</p>
+        </li>
+      </ul>
+
+      <div class="pagination">
+        <h2 class="visually-hidden">Навигация по страницам каталога</h2>
+
+        <ol class="pagination__controls">
+          <li>
+            <a class="pagination__control pagination__control--prev" href="#">Назад</a>
+          </li>
+          <li>
+            <a class="pagination__control pagination__control--next" href="#">Вперед</a>
+          </li>
+        </ol>
+
+        <ol class="pagination__pages">
+          <li>
+            <a class="pagination__page pagination__page--1 pagination__page--active" href="#">1</a>
+          </li>
+          <li>
+            <a class="pagination__page pagination__page--2" href="#">2</a>
+          </li>
+          <li>
+            <a class="pagination__page pagination__page--3" href="#">3</a>
+          </li>
+        </ol>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo logo" href="#">
-      <img class="logo__image" src="https://via.placeholder.com/163x35" srcset="" alt="DEVICE" title="Девайс" width="163" height="35">
+    <a href="index.html" class="page-footer__logo logo">
+      <img class="logo__image" src="https://via.placeholder.com/163x35" alt="Девайс" title="Девайс" width="163" height="35">
     </a>
 
-    <div class="page-footer__buttons">
-      <button class="login" type="button">Войти</button>
-      <button class="compare" type="button">Сравнить</button>
-      <button class="cart" type="button">Корзина</button>
+    <div class="page-footer__links links">
+      <ul class="user-navigation">
+        <li>
+          <a class="link link--profile" href="#">Валентин Петухов</a>
+        </li>
+        <li>
+          <a class="link link--logout" href="#">Выйти</a>
+        </li>
+      </ul>
+
+      <a class="link link--compare" href="#">Сравнить</a>
+      <a class="link link--cart" href="#">Корзина</a>
     </div>
 
-    <nav class="page-footer__navigation navigation">
-      <a class="navigation__item" href="#" title="">Доставка</a>
-      <a class="navigation__item" href="#" title="">Гарантия</a>
-      <a class="navigation__item" href="#" title="">Оплата</a>
-    </nav>
+    <ul class="page-footer__navigation site-navigation">
+      <li>
+        <a class="site-navigation__item" href="#">Доставка</a>
+      </li>
+      <li>
+        <a class="site-navigation__item" href="#">Гарантия</a>
+      </li>
+      <li>
+        <a class="site-navigation__item" href="#">Оплата</a>
+      </li>
+    </ul>
 
     <address class="page-footer__address address">г. Москва, ул. Строителей, 15</address>
     <address class="page-footer__phone address">
-      <a class="telephone-link" href="tel:+7-495-495-95-95">Тел.: +7 (495) 495-95-95</a>
+      <a class="address__phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
     </address>
 
     <section class="page-footer__social social">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <a class="social__link social__link--facebook" href="#" title="">Facebook</a>
-      <a class="social__link social__link--instagram" href="#" title="">Instagram</a>
-      <a class="social__link social__link--twitter" href="#" title="">Twitter</a>
+
+      <ul class="social__links">
+        <li>
+          <a class="social__link social__link--facebook" href="#" title="">Facebook</a>
+        </li>
+        <li>
+          <a class="social__link social__link--instagram" href="#" title="">Instagram</a>
+        </li>
+        <li>
+          <a class="social__link social__link--twitter" href="#" title="">Twitter</a>
+        </li>
+      </ul>
     </section>
 
     <section class="page-footer__copyright copyright">
-      <h2 class="visually-hidden">Правообладатели</h2>
+      <h2 class="visually-hidden">Сайт разработан</h2>
       <a class="copyright__link copyright__link--htmlacademy" href="#">HTML Academy</a>
     </section>
   </footer>
