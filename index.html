@@ -12,16 +12,17 @@
     <nav class="page-header__navigation site-navigation">
 
       <a class="page-header__logo logo">
-        <img class="logo__image" src="img/logo.svg" alt="Девайс" width="163"
+        <img class="logo__image" src="img/logo.svg" alt="" width="163"
           height="35">
       </a>
 
-      <form method="get" action="#">
+      <form class="search-form" action="https://echo.htmlacademy.ru"
+        method="get">
         <label class="visually-hidden" for="site-search">
           Поиск по сайту
         </label>
-        <input name="search" class="search" id="site-search" type="search"
-          placeholder="Поиск по сайту">
+        <input name="search" class="search-form__input" id="site-search"
+          type="search" placeholder="Поиск по сайту">
       </form>
 
       <div class="page-header__links links">
@@ -38,7 +39,7 @@
       <div class="site-navigation__catalog catalog">
         <button class="catalog__button site-navigation__item" type="button">
           Каталог товаров</button>
-        <ul class="catalog__items">
+        <ul class="catalog__items catalog__items--open">
           <li>
             <a class="catalog__item" href="#">Виртуальная реальность</a>
           </li>
@@ -384,17 +385,55 @@
         вы сможете проверить работоспособность покупки. Всякое бывает.</p>
       <a href="#">
         <img class="contacts__map" src="img/map-thumb.png"
-          alt="Карта проезда в офис" width="560" height="222">
+          alt="Улица Строителей, дом 15" width="560" height="222">
       </a>
-      <a class="contacts__mail" href="mailto:device_shop@mail.ru">Напишите нам
-      </a>
+      <a href="#" class="contacts__link">Напишите нам</a>
 
+    </section>
+
+    <section class="page-main__map map popup popup--closed">
+      <h2 class="visually-hidden">Карта проезда</h2>
+
+      <img class="map__image" src="img/map.png" alt="Улицв Строителей, дом 15"
+        width="960" height="559">
+
+      <button class="popup__close" type="button">Вернуться на страницу</button>
+    </section>
+
+    <section class="page-main__feedback feedback popup popup--closed">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+
+      <form class="feedback__form form" action="https://echo.htmlacademy.ru"
+        method="post" id="feedback__form">
+
+        <p class="form__input input">
+          <label class="input__label" for="feedback__name">Ваше имя:</label>
+          <input class="input__field" name="name" id="feedback__name"
+            type="text" placeholder="Имя Фамилия">
+        </p>
+
+        <p class="form__input input">
+          <label class="input__label" for="feedback__email">Ваш e-mail:</label>
+          <input class="input__field" name="email" id="feedback__email"
+            type="email" placeholder="email@example.com">
+        </p>
+
+        <p class="form__input input">
+          <label class="input__label" for="feedback__text">Текст письма:</label>
+          <textarea class="input__field" name="text" id="feedback__text"
+            placeholder="В свободной форме"></textarea>
+        </p>
+
+        <button class="feedback__submit">Отправить</button>
+      </form>
+
+      <button class="popup__close" type="button">Вернуться на страницу</button>
     </section>
   </main>
 
   <footer class="page-footer">
     <a class="page-footer__logo logo">
-      <img class="logo__image" src="img/logo.svg" alt="Девайс" width="163"
+      <img class="logo__image" src="img/logo.svg" alt="" width="163"
         height="35">
     </a>
 
@@ -451,8 +490,8 @@
       <h2 class="visually-hidden">Сайт разработан</h2>
       <a class="copyright__link copyright__link--htmlacademy"
         href="https://htmlacademy.ru">
-        <img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy"
-          title="HTML Academy">
+        <img class="copyright__logo" src="img/logo-html.svg" alt="HTML Academy"
+          width="27" height="35">
       </a>
     </section>
   </footer>
