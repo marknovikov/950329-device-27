@@ -12,16 +12,17 @@
     <nav class="page-header__navigation site-navigation">
 
       <a href="index.html" class="page-header__logo logo">
-        <img class="logo__image" src="img/logo.svg" alt="Девайс" width="163"
-          height="35">
+        <img class="logo__image" src="img/logo.svg" alt="Вернуться на главную"
+          width="163" height="35">
       </a>
 
-      <form method="get" action="#">
+      <form class="search-form" action="https://echo.htmlacademy.ru"
+        method="get">
         <label class="visually-hidden" for="site-search">
           Поиск по сайту
         </label>
-        <input name="search" class="search" id="site-search" type="search"
-          placeholder="Поиск по сайту">
+        <input name="search" class="search-form__input" id="site-search"
+          type="search" placeholder="Поиск по сайту">
       </form>
 
       <div class="page-header__links links">
@@ -88,69 +89,113 @@
   <main class="page-main">
     <h1 class="visually-hidden">Каталог товаров</h1>
 
-    <ul class="breadcrumbs">
-      <li class="breadcrumbs__item">
-        <a class="breadcrumbs__link" href="index.html">Главная</a>
-      </li>
-      <li class="breadcrumbs__item">
-        <a class="breadcrumbs__link" href="#">Каталог товаров</a>
-      </li>
-      <li class="breadcrumbs__item">
-        Моноподы для селфи
-      </li>
-    </ul>
+    <section class="breadcrumb">
+      <h2 class="visually-hidden">Навигационная цепочка</h2>
 
-    <section class="filters">
-      <h2>Фильтр</h2>
-
-      <form method="get" action="#">
-        <fieldset class="filters__filter filter">
-          <legend class="filter__name">Стоимость</legend>
-        </fieldset>
-
-        <fieldset class="filters__filter filter">
-          <legend class="filter__name">Цвет</legend>
-          <label>
-            <input type="checkbox" name="color" value="black" checked>
-            Черный
-          </label>
-          <label>
-            <input type="checkbox" name="color" value="white">
-            Белый
-          </label>
-          <label>
-            <input type="checkbox" name="color" value="blue" checked>
-            Синий
-          </label>
-          <label>
-            <input type="checkbox" name="color" value="red" checked>
-            Красный
-          </label>
-          <label>
-            <input type="checkbox" name="color" value="pink">
-            Розовый
-          </label>
-        </fieldset>
-
-        <fieldset class="filters__filter filter">
-          <legend class="filter__name">Bluetooth</legend>
-          <label>
-            <input type="radio" name="bluetooth" value="true" checked>
-            Есть
-          </label>
-          <label>
-            <input type="radio" name="bluetooth" value="false">
-            Нет
-          </label>
-        </fieldset>
-
-        <button class="filters__button button" type="submit">Показать</button>
-      </form>
-
+      <ol class="breadcrumb__items">
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="#">Каталог товаров</a>
+        </li>
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link">Моноподы для селфи</a>
+        </li>
+      </ol>
     </section>
 
     <section class="products">
       <h2 class="visually-hidden">Моноподы для селфи</h2>
+
+      <section class="filters">
+        <h2>Фильтр</h2>
+
+        <form class="filters__form" action="https://echo.htmlacademy.ru"
+          method="get">
+          <fieldset class="filters__filter filter">
+            <legend class="filter__name">Стоимость</legend>
+          </fieldset>
+
+          <fieldset class="filters__filter filter">
+            <legend class="filter__name">Цвет</legend>
+
+            <ul class="filter__options">
+              <li class="filter__option">
+                <input class="visually-hidden" type="checkbox" name="color"
+                  value="black" id="filter__color__black" checked>
+
+                <label class="filter__label" for="filter__color__black">
+                  Черный
+                </label>
+              </li>
+
+              <li class="filter__option">
+                <input class="visually-hidden" type="checkbox" name="color"
+                  value="white" id="filter__color__white">
+
+                <label class="filter__label" for="filter__color__white">
+                  Белый
+                </label>
+              </li>
+
+              <li class="filter__option">
+                <input class="visually-hidden" type="checkbox" name="color"
+                  value="blue" id="filter__color__blue" checked>
+
+                <label class="filter__label" for="filter__color__blue">
+                  Синий
+                </label>
+              </li>
+
+              <li class="filter__option">
+                <input class="visually-hidden" type="checkbox" name="color"
+                  value="red" id="filter__color__red" checked>
+
+                <label class="filter__label" for="filter__color__red">
+                  Красный
+                </label>
+              </li>
+
+              <li class="filter__option">
+                <input class="visually-hidden" type="checkbox" name="color"
+                  value="pink" id="filter__color__pink">
+
+                <label class="filter__label" for="filter__color__pink">
+                  Розовый
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="filters__filter filter">
+            <legend class="filter__name">Bluetooth</legend>
+
+            <ul class="filter__options">
+              <li class="filter__option">
+                <input class="visually-hidden" type="radio" name="bluetooth"
+                  value="true" id="filter__bluetooth__true" checked>
+
+                <label class="filter__label" for="filter__bluetooth__true">
+                  Есть
+                </label>
+              </li>
+
+              <li class="filter__option">
+                <input class="visually-hidden" type="radio" name="bluetooth"
+                  value="false" id="filter__bluetooth__false">
+
+                <label class="filter__label" for="filter__bluetooth__false">
+                  Нет
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button class="filters__button button" type="submit">Показать</button>
+        </form>
+
+      </section>
 
       <div class="sorting">
         <h2 class="sorting__title">Сортировка</h2>
@@ -160,10 +205,12 @@
             <button class="sorting__type sorting__type--price" type="button">По
               цене</button>
           </li>
+
           <li>
             <button class="sorting__type sorting__type--kind" type="button">По
               типу</button>
           </li>
+
           <li>
             <button class="sorting__type sorting__type--popularity"
               type="button">По популярности</button>
@@ -175,6 +222,7 @@
             <button class="sorting__toggle sorting__toggle--asc" type="button">
               По возрастанию</button>
           </li>
+
           <li>
             <button class="sorting__toggle sorting__toggle--desc" type="button">
               По убыванию</button>
@@ -188,13 +236,11 @@
 
           <div class="product__inner">
             <img class="product__thumb" src="img/item-1.png"
-              alt="Любительская селфи-палка" title="Любительская селфи-палка"
+              alt="Простая телескопическая селфи-палка с одним креплением для смартфона черная"
               width="360" height="379">
             <div class="product__buttons">
-              <button class="product__to-cart-button" type="button">В корзину
-              </button>
-              <button class="product__compare-button" type="button">Добавить к
-                сравнению</button>
+              <a href="#" class="product__to-cart">В корзину</a>
+              <a href="#" class="product__compare">Добавить к сравнению</a>
             </div>
           </div>
 
@@ -206,13 +252,11 @@
 
           <div class="product__inner">
             <img class="product__thumb" src="img/item-2.png"
-              alt="Профессиональная селфи-палка "
-              title="Профессиональная селфи-палка " width="360" height="379">
+              alt="Телескопическая селфи-палка с креплением для фотокамеры черная"
+              width="360" height="379">
             <div class="product__buttons">
-              <button class="product__to-cart-button" type="button">В корзину
-              </button>
-              <button class="product__compare-button" type="button">Добавить к
-                сравнению</button>
+              <a href="#" class="product__to-cart">В корзину</a>
+              <a href="#" class="product__compare">Добавить к сравнению</a>
             </div>
           </div>
 
@@ -224,13 +268,11 @@
 
           <div class="product__inner">
             <img class="product__thumb" src="img/item-3.png"
-              alt="Непотопляемая селфи-палка" title="Непотопляемая селфи-палка"
+              alt="Селфи-палка с черной ручкой и желтыми краями, креплением для экшн-камеры, плавучая"
               width="360" height="379">
             <div class="product__buttons">
-              <button class="product__to-cart-button" type="button">В корзину
-              </button>
-              <button class="product__compare-button" type="button">Добавить к
-                сравнению</button>
+              <a href="#" class="product__to-cart">В корзину</a>
+              <a href="#" class="product__compare">Добавить к сравнению</a>
             </div>
           </div>
 
@@ -242,13 +284,11 @@
 
           <div class="product__inner">
             <img class="product__thumb" src="img/item-4.png"
-              alt="Селфи-палка «Следуй за мной»"
-              title="Селфи-палка «Следуй за мной»" width="360" height="379">
+              alt="Селфи-палка в форме руки с черным рукавом и ладонью белого цвета"
+              width="360" height="379">
             <div class="product__buttons">
-              <button class="product__to-cart-button" type="button">В корзину
-              </button>
-              <button class="product__compare-button" type="button">Добавить к
-                сравнению</button>
+              <a href="#" class="product__to-cart">В корзину</a>
+              <a href="#" class="product__compare">Добавить к сравнению</a>
             </div>
           </div>
 
@@ -269,14 +309,13 @@
               Вперед</a>
           </li>
           <li>
-            <a class="pagination__page pagination__page--1 pagination__page--active"
-              href="#">1</a>
+            <a class="pagination__page pagination__page--active" href="#">1</a>
           </li>
           <li>
-            <a class="pagination__page pagination__page--2" href="#">2</a>
+            <a class="pagination__page" href="#">2</a>
           </li>
           <li>
-            <a class="pagination__page pagination__page--3" href="#">3</a>
+            <a class="pagination__page" href="#">3</a>
           </li>
         </ol>
       </div>
@@ -285,8 +324,8 @@
 
   <footer class="page-footer">
     <a href="index.html" class="page-footer__logo logo">
-      <img class="logo__image" src="img/logo.svg" alt="Девайс" width="163"
-        height="35">
+      <img class="logo__image" src="img/logo.svg" alt="Вернуться на главную"
+        width="163" height="35">
     </a>
 
     <div class="page-footer__links links">
@@ -345,8 +384,8 @@
       <h2 class="visually-hidden">Сайт разработан</h2>
       <a class="copyright__link copyright__link--htmlacademy"
         href="https://htmlacademy.ru">
-        <img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy"
-          title="HTML Academy">
+        <img class="copyright__logo" src="img/logo-html.svg" alt="HTML Academy"
+          width="27" height="35">
       </a>
     </section>
   </footer>
