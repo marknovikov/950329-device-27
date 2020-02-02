@@ -11,9 +11,10 @@
   <header class="page-header">
     <nav class="page-header__navigation site-navigation">
 
-      <a href="index.html" class="page-header__logo logo">
-        <img class="logo__image" src="img/logo.svg" alt="Вернуться на главную"
-          width="163" height="35">
+      <a href="index.html" class="page-header__logo logo"
+        aria-label="Вернуться на главную">
+        <img class="logo__image" src="img/logo.svg"
+          alt="Логотип интернет-магазина «Девайс»" width="163" height="35">
       </a>
 
       <form class="search-form" action="https://echo.htmlacademy.ru"
@@ -115,6 +116,40 @@
           method="get">
           <fieldset class="filters__filter filter">
             <legend class="filter__name">Стоимость</legend>
+
+
+            <ol class="visually-hidden">
+              <li>
+                <label for="filter__price__min">
+                  От
+                  <input name="price_min" id="filter__price__min" type="number"
+                    value="0" min="0" max="10000">
+                </label>
+              </li>
+
+              <li>
+                <label for="filter__price__max">
+                  До
+                  <input class="visually-hidden" name="price_max"
+                    id="filter__price__max" type="number" value="5000" min="0"
+                    max="10000">
+                </label>
+              </li>
+            </ol>
+
+            <div class="filter__range range">
+              <div class="range__track">
+                <div class="range__progress"></div>
+
+                <div class="range__thumb range__thumb--min">
+                  <p class="range__label">от 0</p>
+                </div>
+
+                <div class="range__thumb range__thumb--max">
+                  <p class="range__label">до 5000</p>
+                </div>
+              </div>
+            </div>
           </fieldset>
 
           <fieldset class="filters__filter filter">
@@ -323,9 +358,10 @@
   </main>
 
   <footer class="page-footer">
-    <a href="index.html" class="page-footer__logo logo">
-      <img class="logo__image" src="img/logo.svg" alt="Вернуться на главную"
-        width="163" height="35">
+    <a href="index.html" class="page-footer__logo logo"
+      aria-label="Вернуться на главную">
+      <img class="logo__image" src="img/logo.svg"
+        alt="Логотип интернет-магазина «Девайс»" width="163" height="35">
     </a>
 
     <div class="page-footer__links links">
