@@ -7,6 +7,7 @@
   <title>HTML Academy: Девайс | Главная</title>
 
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -23,8 +24,13 @@
         <label class="visually-hidden" for="site-search">
           Поиск по сайту
         </label>
-        <input name="search" class="search-form__input" id="site-search"
-          type="search" placeholder="Поиск по сайту">
+
+        <p class="search-form__field">
+          <input name="search" class="search-form__input" id="site-search"
+            type="text" placeholder="Поиск по сайту">
+
+          <button class="search-form__button visually-hidden">Найти</button>
+        </p>
       </form>
 
       <div class="page-header__links links">
@@ -41,34 +47,34 @@
       <div class="site-navigation__catalog catalog">
         <button class="catalog__button site-navigation__item" type="button">
           Каталог товаров</button>
-        <ul class="catalog__items catalog__items--open">
-          <li>
-            <a class="catalog__item" href="#">Виртуальная реальность</a>
-          </li>
-          <li>
-            <a class="catalog__item" href="catalog.html">Моноподы для селфи</a>
-          </li>
-          <li>
-            <a class="catalog__item" href="#">Экшн-камеры</a>
-          </li>
-          <li>
-            <ul class="catalog__items">
-              <li>
-                <a class="catalog__item" href="#">Фитнес-браслеты</a>
-              </li>
-              <li>
-                <a class="catalog__item" href="#">Умные часы</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <ul class="catalog__items">
-              <li>
-                <a class="catalog__item" href="#">Квадрокоптеры</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+
+        <div class="catalog__inner catalog__inner--open">
+          <ul class="catalog__items">
+            <li>
+              <a class="catalog__item" href="#">Виртуальная реальность</a>
+            </li>
+            <li>
+              <a class="catalog__item" href="catalog.html">Моноподы для селфи
+              </a>
+            </li>
+            <li>
+              <a class="catalog__item" href="#">Экшн-камеры</a>
+            </li>
+          </ul>
+          <ul class="catalog__items">
+            <li>
+              <a class="catalog__item" href="#">Фитнес-браслеты</a>
+            </li>
+            <li>
+              <a class="catalog__item" href="#">Умные часы</a>
+            </li>
+          </ul>
+          <ul class="catalog__items">
+            <li>
+              <a class="catalog__item" href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <ul class="site-navigation__items">
@@ -361,11 +367,10 @@
     </section>
 
     <section class="page-main__about about">
-      <h2 class="visually-hidden">О нас</h2>
+      <h2 class="about__title">О нас</h2>
 
       <p class="text">Огромный выбор гаджетов не оставит равнодушным гика,
         который есть в каждом из нас.</p>
-      <a class="about__link" href="#">Подробнее о нас</a>
 
       <p class="text">Мы можем доставить ваш товар в самые отдаленные точки
         России! DEVICE работает со многими транспортными компаниями:</p>
@@ -380,10 +385,12 @@
           <a class="shipping__link" href="#">ЖелДорЭкспедиция</a>
         </li>
       </ul>
+
+      <a class="about__link" href="#">Подробнее о нас</a>
     </section>
 
     <section class="page-main__contacts contacts">
-      <h2 class="visually-hidden">Контакты</h2>
+      <h2 class="contacts__title">Контакты</h2>
 
       <p class="text">Вы можете забрать товар сами, заехав в наш офис. Заодно,
         вы сможете проверить работоспособность покупки. Всякое бывает.</p>
@@ -391,47 +398,8 @@
         <img class="contacts__map" src="img/map-thumb.png"
           alt="Улица Строителей, дом 15" width="560" height="222">
       </a>
+
       <a href="#" class="contacts__link">Напишите нам</a>
-
-    </section>
-
-    <section class="page-main__map map popup popup--closed">
-      <h2 class="visually-hidden">Карта проезда</h2>
-
-      <img class="map__image" src="img/map.png" alt="Улицв Строителей, дом 15"
-        width="960" height="559">
-
-      <button class="popup__close" type="button">Вернуться на страницу</button>
-    </section>
-
-    <section class="page-main__feedback feedback popup popup--closed">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
-
-      <form class="feedback__form form" action="https://echo.htmlacademy.ru"
-        method="post" id="feedback__form">
-
-        <p class="form__input input">
-          <label class="input__label" for="feedback__name">Ваше имя:</label>
-          <input class="input__field" name="name" id="feedback__name"
-            type="text" placeholder="Имя Фамилия">
-        </p>
-
-        <p class="form__input input">
-          <label class="input__label" for="feedback__email">Ваш e-mail:</label>
-          <input class="input__field" name="email" id="feedback__email"
-            type="email" placeholder="email@example.com">
-        </p>
-
-        <p class="form__input input">
-          <label class="input__label" for="feedback__text">Текст письма:</label>
-          <textarea class="input__field" name="text" id="feedback__text"
-            placeholder="В свободной форме"></textarea>
-        </p>
-
-        <button class="feedback__submit">Отправить</button>
-      </form>
-
-      <button class="popup__close" type="button">Вернуться на страницу</button>
     </section>
   </main>
 
@@ -499,6 +467,45 @@
       </a>
     </section>
   </footer>
+
+  <section class="map popup popup--closed">
+    <h2 class="visually-hidden">Карта проезда</h2>
+
+    <img class="map__image" src="img/map.png" alt="Улицв Строителей, дом 15"
+      width="960" height="559">
+
+    <button class="popup__close" type="button">Вернуться на страницу</button>
+  </section>
+
+  <section class="feedback popup popup--closed">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+
+    <form class="feedback__form form" action="https://echo.htmlacademy.ru"
+      method="post" id="feedback__form">
+
+      <p class="form__input input">
+        <label class="input__label" for="feedback__name">Ваше имя:</label>
+        <input class="input__field" name="name" id="feedback__name" type="text"
+          placeholder="Имя Фамилия">
+      </p>
+
+      <p class="form__input input">
+        <label class="input__label" for="feedback__email">Ваш e-mail:</label>
+        <input class="input__field" name="email" id="feedback__email"
+          type="email" placeholder="email@example.com">
+      </p>
+
+      <p class="form__input input">
+        <label class="input__label" for="feedback__text">Текст письма:</label>
+        <textarea class="input__field" name="text" id="feedback__text"
+          placeholder="В свободной форме"></textarea>
+      </p>
+
+      <button class="feedback__submit">Отправить</button>
+    </form>
+
+    <button class="popup__close" type="button">Вернуться на страницу</button>
+  </section>
 </body>
 
 </html>
