@@ -330,6 +330,159 @@ textarea {
  * INDEX
  */
 
+.promo__items,
+.promo__controls,
+.services__items,
+.services__controls {
+  list-style: none;
+}
+
+.promo__slogan {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 56px;
+}
+
+.promo__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 40px;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.promo__link:hover,
+.promo__link:focus {
+  background-color: #f0c52e;
+}
+
+.promo__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.specs__header {
+  display: table-footer-group;
+}
+
+.specs__key {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.specs__value {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.promo__ordinal {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 179px;
+  line-height: 179px;
+  color: white;
+}
+
+.categories__items {
+  list-style: none;
+}
+
+.categories__items li {
+  width: 160px;
+}
+
+.categories__link {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: inherit;
+}
+
+.categories__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.categories__link::before {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 160px;
+  background-color: #f7e296;
+}
+
+.categories__link:hover::before,
+.categories__link:focus::before,
+.categories__link:active::before {
+  background-color: #f0c52e;
+}
+
+.services {
+  background-color: #e5e5e5;
+}
+
+.service__title,
+.about__title,
+.contacts__title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.services__controls li {
+  width: 278px;
+  height: 40px;
+}
+
+.services__control {
+  border: none;
+  background: none;
+  padding: 0;
+  width: 160px;
+  height: 40px;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.services__control:hover,
+.services__control:focus {
+  background-color: #f0c52e;
+}
+
+.services__control:active,
+.slider__control--active.services__control {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+
+  color: #f7e184;
+}
+
+.services__control:active::after,
+.slider__control--active.services__control::after {
+  content: "";
+  width: 118px;
+}
+
 .about__title,
 .contacts__title {
   font-family: "Gilroy", Arial, sans-serif;
@@ -410,6 +563,10 @@ textarea {
   text-transform: uppercase;
 }
 
+.filters__title {
+  background-color: #dbdbdb;
+}
+
 .filters__title::after,
 .sorting__title::after {
   content: ":";
@@ -468,9 +625,93 @@ textarea {
   color: #f7e184;
 }
 
+.sorting {
+  background-color: #ebebeb;
+}
+
 .sorting__types,
-.sorting__toggles {
+.sorting__toggles,
+.pagination__items {
   list-style: none;
+}
+
+.sorting__type {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting__type:hover,
+.sorting__type:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting__type:active,
+.sorting__type--active.sorting__type {
+  color: #000000;
+}
+
+.sorting__toggle {
+  opacity: 0.3;
+}
+
+.sorting__toggle:hover,
+.sorting__toggle:focus {
+  opacity: 0.6;
+}
+
+.sorting__toggle:active,
+.sorting__toggle.sorting__toggle--active {
+  opacity: 1;
+}
+
+.pagination {
+  background-color: #ebebeb;
+}
+
+.pagination__control,
+.pagination__page {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.pagination__control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 137px;
+  height: 70px;
+  color: inherit;
+}
+
+.pagination__control:hover,
+.pagination__control:focus {
+  background-color: #d9d9d9;
+}
+
+.pagination__control:active {
+  background-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination__page {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination__page:hover,
+.pagination__page:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination__page:active,
+.pagination__page--active {
+  color: inherit;
 }
 
 .products__items {
