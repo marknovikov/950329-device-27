@@ -12,87 +12,98 @@
 
 <body>
   <header class="page-header">
-    <nav class="page-header__navigation site-navigation">
+    <div class="container">
+      <nav class="page-header__navigation navigation">
+        <div class="navigation__container">
 
-      <a href="index.html" class="page-header__logo logo"
-        aria-label="Вернуться на главную">
-        <img class="logo__image" src="img/logo.svg"
-          alt="Логотип интернет-магазина «Девайс»" width="163" height="35">
-      </a>
+          <div class="row">
+            <a href="index.html" class="page-header__logo logo"
+              title="Вернуться на главную">
+              <img class="logo__image" src="img/logo.svg"
+                alt="Логотип интернет-магазина «Девайс»" width="163"
+                height="35">
+            </a>
+          </div>
 
-      <form class="search-form" action="https://echo.htmlacademy.ru"
-        method="get">
-        <label class="visually-hidden" for="site-search">
-          Поиск по сайту
-        </label>
+          <div class="row">
+            <form class="search-form navigation__search-form"
+              action="https://echo.htmlacademy.ru" method="get">
+              <label class="visually-hidden" for="site-search">
+                Поиск по сайту
+              </label>
 
-        <p class="search-form__field">
-          <input name="search" class="search-form__input" id="site-search"
-            type="text" placeholder="Поиск по сайту">
+              <p class="search-form__field">
+                <input name="search" class="search-form__input" id="site-search"
+                  type="text" placeholder="Поиск по сайту">
 
-          <button class="search-form__button  visually-hidden">Найти</button>
-        </p>
-      </form>
+                <button class="search-form__button visually-hidden">Найти
+                </button>
+              </p>
+            </form>
 
-      <div class="page-header__links links">
-        <ul class="user-navigation">
-          <li>
-            <a class="link link--profile" href="#">Валентин Петухов</a>
-          </li>
-          <li>
-            <a class="link link--logout" href="#">Выйти</a>
-          </li>
-        </ul>
+            <div class="user-links navigation__user-links">
+              <ul class="user-navigation user-links__user-navigation">
+                <li>
+                  <a class="link link--login" href="#">Войти</a>
+                </li>
+              </ul>
 
-        <a class="link link--compare" href="#">Сравнить</a>
-        <a class="link link--cart" href="#">Корзина</a>
-      </div>
+              <a class="link link--compare" href="#">Сравнить</a>
+              <a class="link link--cart" href="#">Корзина</a>
+            </div>
+          </div>
 
-      <div class="site-navigation__catalog catalog">
-        <button class="catalog__button site-navigation__item" type="button">
-          Каталог товаров</button>
+          <div class="row">
+            <button class="navigation__link navigation__link--catalog"
+              type="button">
+              Каталог товаров</button>
 
-        <div class="catalog__inner catalog__inner--open">
-          <ul class="catalog__items">
-            <li>
-              <a class="catalog__item" href="#">Виртуальная реальность</a>
-            </li>
-            <li>
-              <a class="catalog__item" href="catalog.html">Моноподы для селфи
-              </a>
-            </li>
-            <li>
-              <a class="catalog__item" href="#">Экшн-камеры</a>
-            </li>
-          </ul>
-          <ul class="catalog__items">
-            <li>
-              <a class="catalog__item" href="#">Фитнес-браслеты</a>
-            </li>
-            <li>
-              <a class="catalog__item" href="#">Умные часы</a>
-            </li>
-          </ul>
-          <ul class="catalog__items">
-            <li>
-              <a class="catalog__item" href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
+            <ul class="navigation__items">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Доставка</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Гарантия</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <ul class="site-navigation__items">
-        <li>
-          <a class="site-navigation__item" href="#">Доставка</a>
-        </li>
-        <li>
-          <a class="site-navigation__item" href="#">Гарантия</a>
-        </li>
-        <li>
-          <a class="site-navigation__item" href="#">Оплата</a>
-        </li>
-      </ul>
-    </nav>
+        <div class="navigation__catalog catalog catalog--hidden">
+          <div class="row navigation__container">
+            <ul class="catalog__items">
+              <li>
+                <a class="catalog__link" href="#">Виртуальная реальность</a>
+              </li>
+              <li>
+                <a class="catalog__link" href="#">Моноподы для
+                  селфи
+                </a>
+              </li>
+              <li>
+                <a class="catalog__link" href="#">Экшн-камеры</a>
+              </li>
+            </ul>
+            <ul class="catalog__items">
+              <li>
+                <a class="catalog__link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li>
+                <a class="catalog__link" href="#">Умные часы</a>
+              </li>
+            </ul>
+            <ul class="catalog__items">
+              <li>
+                <a class="catalog__link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main">
@@ -394,15 +405,15 @@
       <a class="link link--cart" href="#">Корзина</a>
     </div>
 
-    <ul class="page-footer__navigation site-navigation">
-      <li>
-        <a class="site-navigation__item" href="#">Доставка</a>
+    <ul class="page-footer__navigation navigation">
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">Доставка</a>
       </li>
-      <li>
-        <a class="site-navigation__item" href="#">Гарантия</a>
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">Гарантия</a>
       </li>
-      <li>
-        <a class="site-navigation__item" href="#">Оплата</a>
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">Контакты</a>
       </li>
     </ul>
 
