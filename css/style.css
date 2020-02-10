@@ -43,11 +43,11 @@
 
 html {
   /* scaffolding */
-  width: 1440px;
+  /* width: 1440px;
   height: 2795px;
   background-image: url("../preview/device-index.jpg");
   background-size: 1440px 2795px;
-  opacity: 0.7;
+  opacity: 0.7; */
 }
 
 *,
@@ -364,6 +364,7 @@ textarea {
  */
 
 .page-footer {
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   background-color: #464646;
@@ -672,15 +673,57 @@ textarea {
   width: 118px;
 }
 
+.page-main__columns {
+  min-height: 520px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-main__about {
+  width: 480px;
+}
+
 .about__title,
 .contacts__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 45px;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
 }
 
+.text {
+  margin: 0;
+  padding: 0;
+}
+
+.about .text {
+  margin-bottom: 30px;
+}
+
+.shipping {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.about__shipping {
+  padding-top: 35px;
+}
+
 .shipping__link {
+  display: flex;
+  align-items: center;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 16px;
@@ -688,7 +731,34 @@ textarea {
   color: inherit;
 }
 
-.contacts__map {
+.shipping__link::before {
+  content: "";
+  display: block;
+  height: 16px;
+  width: 16px;
+  margin-right: 24px;
+  background-image: url("../img/icons/list-marker.svg");
+  background-size: cover;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-main__contacts {
+  width: 562px;
+}
+
+.contacts .text {
+  margin-bottom: 40px;
+}
+
+.contacts__map-link,
+.contacts__map-thumb {
+  margin: 0;
+  padding: 0;
+
   display: block;
   width: 560px;
   height: 222px;
@@ -697,6 +767,7 @@ textarea {
 
 .about__link,
 .contacts__link {
+  margin-top: auto;
   display: flex;
   justify-content: center;
   align-items: center;
