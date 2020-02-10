@@ -44,9 +44,9 @@
 html {
   /* scaffolding */
   /* width: 1440px;
-  height: 2795px;
-  background-image: url("../preview/device-index.jpg");
-  background-size: 1440px 2795px;
+  height: 2015;
+  background-image: url("../preview/device-catalog.jpg");
+  background-size: 1440px 2015px;
   opacity: 0.7; */
 }
 
@@ -153,9 +153,15 @@ textarea {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.breadcrumb {
+  margin-bottom: 46px;
+}
+
 .breadcrumb__items {
+  padding: 0;
+  margin: 0;
   list-style: none;
-  padding-left: 0;
+  display: flex;
 }
 
 .breadcrumb__item,
@@ -172,6 +178,11 @@ textarea {
 /*
  * HEADER
  */
+
+.page-header {
+  min-height: 186px;
+  margin-bottom: 37px;
+}
 
 .page-header__logo {
   position: absolute;
@@ -280,6 +291,8 @@ textarea {
 .user-navigation {
   padding: 0;
   margin: 0;
+
+  display: flex;
 }
 
 .user-links__user-navigation {
@@ -342,8 +355,7 @@ textarea {
 }
 
 .catalog--hidden {
-  /* scaffolding */
-  /* display: none; */
+  display: none;
 }
 
 .catalog__items {
@@ -802,19 +814,56 @@ textarea {
  * CATALOG
  */
 
+.container--catalog {
+  padding-left: 80px;
+}
+
+.catalog-page .page-main__title {
+  margin-bottom: 24px;
+}
+
 .page-main__title {
+  margin: 0;
+  padding: 0;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
+  letter-spacing: 0.01em;
+}
+
+.catalog-page__columns {
+  width: 100%;
+  display: flex;
 }
 
 .filters {
+  display: flex;
+  flex-direction: column;
+
+  width: 32.5%;
   background-color: #efefef;
+}
+
+.filters__header {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 70px;
+
+  display: flex;
+  min-height: 70px;
+  background-color: #dbdbdb;
 }
 
 .filters__title,
 .sorting__title {
+  display: flex;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 16px;
@@ -823,35 +872,104 @@ textarea {
   text-transform: uppercase;
 }
 
-.filters__title {
-  background-color: #dbdbdb;
-}
-
 .filters__title::after,
 .sorting__title::after {
   content: ":";
   font: inherit;
 }
 
-.filters fieldset {
+.filters__column {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: 68px;
+
+  min-width: 200px;
+}
+
+.filters__filter {
+  margin: 0;
+  padding: 0;
   border: none;
+  margin-bottom: 38px;
 }
 
 .filter__name {
+  padding-top: 12px;
+  margin-bottom: 25px;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
 }
 
+.range {
+  padding-top: 10px;
+  padding-left: 10px;
+  min-height: 40px;
+}
+
+.range__track {
+  position: relative;
+  width: 196px;
+  height: 2px;
+}
+
+.range__progress {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 0;
+  height: 2px;
+  max-width: 176px;
+}
+
+.range__thumb {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.range__thumb--max {
+  left: 110px;
+}
+
+.range__thumb::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.range__label {
+  margin: 0;
+  padding: 0;
+}
+
 .filter__options {
+  padding: 0;
+  margin: 0;
   list-style: none;
-  padding-left: 0;
+}
+
+.filter__option {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.filter__option:last-child {
+  margin-bottom: 0;
 }
 
 .filter__label {
   font-size: 14px;
-  line-height: 40px;
+  line-height: 18px;
 }
 
 .filter__input:hover::before,
@@ -886,15 +1004,55 @@ textarea {
   color: #f7e184;
 }
 
+.catalog-page .page-main__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 67.5%;
+}
+
 .sorting {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 70px;
+
   background-color: #ebebeb;
+}
+
+.sorting__container {
+  display: flex;
+  width: 800px;
+  min-height: 70px;
+  margin-left: 52px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.sorting__title {
+  margin-right: 55px;
 }
 
 .sorting__types,
 .sorting__toggles,
 .pagination__items {
+  padding: 0;
+  margin: 0;
   list-style: none;
-  padding-left: 0;
+}
+
+.sorting__types {
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
+
+.sorting__types li {
+  padding: 0;
+  margin: 0;
+  margin-right: 30px;
+}
+
+.sorting__types li:last-child {
+  margin-right: 0;
 }
 
 .sorting__type {
@@ -915,6 +1073,13 @@ textarea {
   color: #000000;
 }
 
+.sorting__toggles {
+  width: 40px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
 .sorting__toggle {
   opacity: 0.3;
 }
@@ -931,6 +1096,11 @@ textarea {
 
 .pagination {
   background-color: #ebebeb;
+}
+
+.catalog-page__pagination {
+  margin-top: -10px;
+  order: 2;
 }
 
 .pagination__control,
@@ -977,22 +1147,77 @@ textarea {
 }
 
 .products__items {
+  padding: 0;
+  margin: 0;
   list-style: none;
-  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products__container {
+  margin: 0;
+  margin-left: 52px;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 800px;
+}
+
+.products__item {
+  margin-right: 40px;
+  margin-bottom: 45px;
+}
+
+.products__item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.product {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  width: 360px;
 }
 
 .product__title {
+  padding: 0;
+  margin: 0;
+  width: 260px;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
 }
 
+.product__inner,
 .product__thumb {
-  display: block;
   width: 360px;
   height: 379px;
+}
+
+.product__thumb {
+  display: block;
   background-color: #cccccc;
+}
+
+.product__inner {
+  order: -1;
+  position: relative;
+  margin-bottom: 33px;
+}
+
+.product__buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 379px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .product__to-cart {
@@ -1038,6 +1263,8 @@ textarea {
 }
 
 .product__price {
+  margin: 0;
+  padding: 0;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
