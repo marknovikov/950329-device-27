@@ -12,83 +12,94 @@
 
 <body>
   <header class="page-header">
-    <nav class="page-header__navigation site-navigation">
+    <div class="container">
+      <nav class="page-header__navigation navigation">
+        <div class="navigation__container">
 
-      <a class="page-header__logo logo">
-        <img class="logo__image" src="img/logo.svg"
-          alt="Логотип интернет-магазина «Девайс»" width="163" height="35">
-      </a>
+          <a class="page-header__logo logo">
+            <img class="logo__image" src="img/logo.svg"
+              alt="Логотип интернет-магазина «Девайс»" width="163" height="35">
+          </a>
 
-      <form class="search-form" action="https://echo.htmlacademy.ru"
-        method="get">
-        <label class="visually-hidden" for="site-search">
-          Поиск по сайту
-        </label>
+          <div class="navigation__row">
+            <form class="search-form navigation__search-form"
+              action="https://echo.htmlacademy.ru" method="get">
+              <label class="visually-hidden" for="site-search">
+                Поиск по сайту
+              </label>
 
-        <p class="search-form__field">
-          <input name="search" class="search-form__input" id="site-search"
-            type="text" placeholder="Поиск по сайту">
+              <p class="search-form__field">
+                <input name="search" class="search-form__input" id="site-search"
+                  type="text" placeholder="Поиск по сайту">
 
-          <button class="search-form__button visually-hidden">Найти</button>
-        </p>
-      </form>
+                <button class="search-form__button visually-hidden">Найти
+                </button>
+              </p>
+            </form>
 
-      <div class="page-header__links links">
-        <ul class="user-navigation">
-          <li>
-            <a class="link link--login" href="#">Войти</a>
-          </li>
-        </ul>
+            <div class="user-links navigation__user-links">
+              <ul class="user-navigation user-links__user-navigation">
+                <li>
+                  <a class="link link--login" href="#">Войти</a>
+                </li>
+              </ul>
 
-        <a class="link link--compare" href="#">Сравнить</a>
-        <a class="link link--cart" href="#">Корзина</a>
-      </div>
+              <a class="link link--compare" href="#">Сравнить</a>
+              <a class="link link--cart" href="#">Корзина</a>
+            </div>
+          </div>
 
-      <div class="site-navigation__catalog catalog">
-        <button class="catalog__button site-navigation__item" type="button">
-          Каталог товаров</button>
+          <div class="navigation__row">
+            <button class="navigation__link navigation__link--catalog"
+              type="button">
+              Каталог товаров</button>
 
-        <div class="catalog__inner catalog__inner--open">
-          <ul class="catalog__items">
-            <li>
-              <a class="catalog__item" href="#">Виртуальная реальность</a>
-            </li>
-            <li>
-              <a class="catalog__item" href="catalog.html">Моноподы для селфи
-              </a>
-            </li>
-            <li>
-              <a class="catalog__item" href="#">Экшн-камеры</a>
-            </li>
-          </ul>
-          <ul class="catalog__items">
-            <li>
-              <a class="catalog__item" href="#">Фитнес-браслеты</a>
-            </li>
-            <li>
-              <a class="catalog__item" href="#">Умные часы</a>
-            </li>
-          </ul>
-          <ul class="catalog__items">
-            <li>
-              <a class="catalog__item" href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
+            <ul class="navigation__items">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Доставка</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Гарантия</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <ul class="site-navigation__items">
-        <li>
-          <a class="site-navigation__item" href="#">Доставка</a>
-        </li>
-        <li>
-          <a class="site-navigation__item" href="#">Гарантия</a>
-        </li>
-        <li>
-          <a class="site-navigation__item" href="#">Оплата</a>
-        </li>
-      </ul>
-    </nav>
+        <div class="navigation__catalog catalog">
+          <div class="navigation__container catalog__categories">
+            <ul class="catalog__items">
+              <li>
+                <a class="catalog__link" href="#">Виртуальная реальность</a>
+              </li>
+              <li>
+                <a class="catalog__link" href="catalog.html">Моноподы для
+                  селфи
+                </a>
+              </li>
+              <li>
+                <a class="catalog__link" href="#">Экшн-камеры</a>
+              </li>
+            </ul>
+            <ul class="catalog__items">
+              <li>
+                <a class="catalog__link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li>
+                <a class="catalog__link" href="#">Умные часы</a>
+              </li>
+            </ul>
+            <ul class="catalog__items">
+              <li>
+                <a class="catalog__link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main">
@@ -366,106 +377,119 @@
       </ul>
     </section>
 
-    <section class="page-main__about about">
-      <h2 class="about__title">О нас</h2>
+    <div class="page-main__columns container">
+      <section class="page-main__about about">
+        <h2 class="about__title">О нас</h2>
 
-      <p class="text">Огромный выбор гаджетов не оставит равнодушным гика,
-        который есть в каждом из нас.</p>
+        <p class="text">Огромный выбор гаджетов не оставит равнодушным гика,<br>
+          который есть в каждом из нас.</p>
 
-      <p class="text">Мы можем доставить ваш товар в самые отдаленные точки
-        России! DEVICE работает со многими транспортными компаниями:</p>
-      <ul class="about__shipping shipping">
-        <li class="shipping__item">
-          <a class="shipping__link" href="#">Деловые Линии</a>
-        </li>
-        <li class="shipping__item">
-          <a class="shipping__link" href="#">Автотрейдинг</a>
-        </li>
-        <li class="shipping__item">
-          <a class="shipping__link" href="#">ЖелДорЭкспедиция</a>
-        </li>
-      </ul>
+        <p class="text">Мы можем доставить ваш товар в самые отдаленные
+          точки<br>
+          России! DEVICE работает со многими транспортными компаниями:</p>
+        <ul class="about__shipping shipping">
+          <li class="shipping__item">
+            <a class="shipping__link" href="#">Деловые Линии</a>
+          </li>
+          <li class="shipping__item">
+            <a class="shipping__link" href="#">Автотрейдинг</a>
+          </li>
+          <li class="shipping__item">
+            <a class="shipping__link" href="#">ЖелДорЭкспедиция</a>
+          </li>
+        </ul>
 
-      <a class="about__link" href="#">Подробнее о нас</a>
-    </section>
+        <a class="about__link" href="#">Подробнее о нас</a>
+      </section>
 
-    <section class="page-main__contacts contacts">
-      <h2 class="contacts__title">Контакты</h2>
+      <section class="page-main__contacts contacts">
+        <h2 class="contacts__title">Контакты</h2>
 
-      <p class="text">Вы можете забрать товар сами, заехав в наш офис. Заодно,
-        вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-      <a href="#">
-        <img class="contacts__map" src="img/map-thumb.png"
-          alt="Улица Строителей, дом 15" width="560" height="222">
-      </a>
+        <p class="text">Вы можете забрать товар сами, заехав в наш офис. Заодно,
+          вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <a href="#" class="contacts__map-link">
+          <img class="contacts__map-thumb" src="img/map-thumb.png"
+            alt="Улица Строителей, дом 15" width="560" height="222">
+        </a>
 
-      <a href="#" class="contacts__link">Напишите нам</a>
-    </section>
+        <a href="#" class="contacts__link">Напишите нам</a>
+      </section>
+    </div>
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo logo">
-      <img class="logo__image" src="img/logo.svg"
-        alt="Логотип интернет-магазина «Девайс»" width="163" height="35">
-    </a>
+    <div class="container page-footer__container">
+      <div class="page-footer__row">
+        <a class="page-footer__logo logo">
+          <img class="logo__image" src="img/logo.svg"
+            alt="Логотип интернет-магазина «Девайс»" width="163" height="35">
+        </a>
 
-    <div class="page-footer__links links">
-      <ul class="user-navigation">
-        <li>
-          <a class="link link--login" href="#">Войти</a>
-        </li>
-      </ul>
+        <div class="page-footer__links links page-footer__row">
+          <ul class="user-navigation">
+            <li>
+              <a class="link link--login" href="#">Войти</a>
+            </li>
+          </ul>
 
-      <a class="link link--compare" href="#">Сравнить</a>
-      <a class="link link--cart" href="#">Корзина</a>
+          <a class="link link--compare" href="#">Сравнить</a>
+          <a class="link link--cart" href="#">Корзина</a>
+        </div>
+      </div>
+
+      <div class="page-footer__row">
+        <ul class="page-footer__navigation navigation">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Доставка</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Гарантия</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <address class="page-footer__address address">г. Москва, ул. Строителей,
+          15
+        </address>
+        <address class="page-footer__phone address">
+          <a class="address__phone" href="tel:+74954959595">Тел.: +7 (495)
+            495-95-95
+          </a>
+        </address>
+      </div>
+
+      <div class="page-footer__row page-footer__row--social">
+        <section class="page-footer__social social">
+          <h2 class="visually-hidden">Мы в социальных сетях</h2>
+
+          <ul class="social__links">
+            <li>
+              <a class="social__link social__link--facebook" href="#" title="">
+                Facebook</a>
+            </li>
+            <li>
+              <a class="social__link social__link--instagram" href="#" title="">
+                Instagram</a>
+            </li>
+            <li>
+              <a class="social__link social__link--twitter" href="#" title="">
+                Twitter</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="page-footer__copyright copyright">
+          <h2 class="visually-hidden">Сайт разработан</h2>
+          <a class="copyright__link copyright__link--htmlacademy"
+            href="https://htmlacademy.ru">
+            <img class="copyright__logo" src="img/logo-html.svg"
+              alt="HTML Academy" width="27" height="35">
+          </a>
+        </section>
+      </div>
     </div>
-
-    <ul class="page-footer__navigation site-navigation">
-      <li>
-        <a class="site-navigation__item" href="#">Доставка</a>
-      </li>
-      <li>
-        <a class="site-navigation__item" href="#">Гарантия</a>
-      </li>
-      <li>
-        <a class="site-navigation__item" href="#">Оплата</a>
-      </li>
-    </ul>
-
-    <address class="page-footer__address address">г. Москва, ул. Строителей, 15
-    </address>
-    <address class="page-footer__phone address">
-      <a class="address__phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95
-      </a>
-    </address>
-
-    <section class="page-footer__social social">
-      <h2 class="visually-hidden">Мы в социальных сетях</h2>
-
-      <ul class="social__links">
-        <li>
-          <a class="social__link social__link--facebook" href="#" title="">
-            Facebook</a>
-        </li>
-        <li>
-          <a class="social__link social__link--instagram" href="#" title="">
-            Instagram</a>
-        </li>
-        <li>
-          <a class="social__link social__link--twitter" href="#" title="">
-            Twitter</a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="page-footer__copyright copyright">
-      <h2 class="visually-hidden">Сайт разработан</h2>
-      <a class="copyright__link copyright__link--htmlacademy"
-        href="https://htmlacademy.ru">
-        <img class="copyright__logo" src="img/logo-html.svg" alt="HTML Academy"
-          width="27" height="35">
-      </a>
-    </section>
   </footer>
 
   <section class="map popup popup--closed">
