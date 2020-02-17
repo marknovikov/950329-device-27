@@ -68,7 +68,7 @@
           </div>
         </div>
 
-        <div class="navigation__catalog catalog">
+        <div class="navigation__catalog catalog catalog--hidden">
           <div class="navigation__container catalog__categories">
             <ul class="catalog__items">
               <li>
@@ -113,9 +113,11 @@
           <li class="slider__item promo__item">
             <h3 class="visually-hidden">Палка для селфи 8,5 м</h3>
 
-            <img class="promo__image" src="img/slider-1.png" width="384"
-              height="486"
-              alt="Палка для селфи черная телескопическая на треноге">
+            <div class="promo__column">
+              <img class="promo__image" src="img/slider-1.png" width="384"
+                height="486"
+                alt="Палка для селфи черная телескопическая на треноге">
+            </div>
 
             <div class="promo__inner">
               <p class="promo__slogan">
@@ -157,78 +159,86 @@
           <li class="slider__item slider__item--closed promo__item">
             <h3 class="visually-hidden">Фитнес-браслет</h3>
 
-            <img class="promo__image" src="img/slider-2.png" width="345"
-              height="485" alt="Фитнес-браслет черный">
+            <div class="promo__column">
+              <img class="promo__image" src="img/slider-2.png" width="345"
+                height="485" alt="Фитнес-браслет черный">
+            </div>
 
-            <p class="promo__slogan">
-              Худеем<br>
-              правильно!
-            </p>
+            <div class="promo__inner">
+              <p class="promo__slogan">
+                Худеем<br>
+                правильно!
+              </p>
 
-            <p class="promo__text">
-              Мотивирующие фитнес-браслеты помогут найти в себе силы
-              не пропускать занятия и соблюдать диету.
-            </p>
+              <p class="promo__text">
+                Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
+                не пропускать занятия и соблюдать диету.
+              </p>
 
-            <table class="promo__specs specs">
-              <caption class="visually-hidden">Технические характеристики
-              </caption>
+              <table class="promo__specs specs">
+                <caption class="visually-hidden">Технические характеристики
+                </caption>
 
-              <thead class="specs__header">
-                <tr>
-                  <th class="specs__key">Без подзарядки</th>
-                </tr>
-              </thead>
-              <tbody class="specs__body">
-                <tr>
-                  <td class="specs__value">48 часов</td>
-                </tr>
-              </tbody>
-            </table>
+                <thead class="specs__header">
+                  <tr>
+                    <th class="specs__key">Без подзарядки</th>
+                  </tr>
+                </thead>
+                <tbody class="specs__body">
+                  <tr>
+                    <td class="specs__value">48 часов</td>
+                  </tr>
+                </tbody>
+              </table>
 
-            <a class="button promo__button" href="#">Подробнее</a>
+              <a class="button promo__button" href="#">Подробнее</a>
 
-            <p class="promo__ordinal">02</p>
+              <p class="promo__ordinal">02</p>
+            </div>
           </li>
 
           <li class="slider__item slider__item--closed promo__item">
             <h3 class="visually-hidden">Боевой квадрокоптер</h3>
 
-            <img class="promo__image" src="img/slider-3.png" width="526"
-              height="334"
-              alt="Квадрокоптер с белым корпусом и лазерной огневой установкой">
+            <div class="promo__column">
+              <img class="promo__image" src="img/slider-3.png" width="526"
+                height="334"
+                alt="Квадрокоптер с белым корпусом и лазерной огневой установкой">
+            </div>
 
-            <p class="promo__slogan">
-              Порхает как бабочка,<br>
-              жалит как плчела!
-            </p>
+            <div class="promo__inner">
+              <p class="promo__slogan">
+                Порхает как бабочка,<br>
+                жалит как плчела!
+              </p>
 
-            <p class="promo__text">
-              Этот обычный, на первый взгляд, квадрокоптер оснащен
-              мощным лазером, замаскированным под стандартную камеру.
-            </p>
+              <p class="promo__text">
+                Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+                мощным лазером, замаскированным под стандартную камеру.
+              </p>
 
-            <table class="promo__specs specs">
-              <caption class="visually-hidden">Технические характеристики
-              </caption>
+              <table class="promo__specs specs">
+                <caption class="visually-hidden">Технические характеристики
+                </caption>
 
-              <thead class="specs__header">
-                <tr>
-                  <th class="specs__key">Дальность полета</th>
-                  <th class="specs__key">Радиус поражения</th>
-                </tr>
-              </thead>
-              <tbody class="specs__body">
-                <tr>
-                  <td class="specs__value">800 м</td>
-                  <td class="specs__value">50 м</td>
-                </tr>
-              </tbody>
-            </table>
+                <thead class="specs__header">
+                  <tr>
+                    <th class="specs__key">Дальность полета</th>
+                    <th class="specs__key">Радиус поражения</th>
+                  </tr>
+                </thead>
+                <tbody class="specs__body">
+                  <tr>
+                    <td class="specs__value">800 м</td>
+                    <td class="specs__value">50 м</td>
+                  </tr>
+                </tbody>
+              </table>
 
-            <a class="button promo__button" href="#">Подробнее</a>
+              <a class="button promo__button" href="#">Подробнее</a>
 
-            <p class="promo__ordinal">03</p>
+              <p class="promo__ordinal">03</p>
+            </div>
           </li>
         </ol>
 
@@ -236,7 +246,8 @@
 
         <ol class="promo__controls slider__controls">
           <li>
-            <button class="promo__control slider__control slider__control--1"
+            <button
+              class="promo__control slider__control  slider__control--active slider__control--1"
               type="button">1</button>
           </li>
 
@@ -265,7 +276,7 @@
           <li>
             <a class="categories__link categories__link--monopodes"
               href="catalog.html">
-              Моноподы для селфи
+              Моноподы<br> для селфи
             </a>
           </li>
           <li>
@@ -301,7 +312,7 @@
         <h2 class="visually-hidden">Услуги</h2>
 
         <ol class="services__items slider__items">
-          <li class="service slider__item">
+          <li class="service service--delivery slider__item">
             <h3 class="service__title">Доставка</h3>
 
             <p class="service__text">
@@ -311,24 +322,23 @@
             </p>
           </li>
 
-          <li class="service slider__item slider__item--closed">
+          <li
+            class="service service--warranty slider__item slider__item--closed">
             <h3 class="service__title">Гарантия</h3>
 
             <p class="service__text">
-              Если из-за возгорания купленного у нас товара у вас сгорит дом —
-              не
-              переживайте, мы выдадим вам новый.
+              Если из-за возгорания купленного у нас товара у вас сгорит<br>
+              дом — не переживайте, мы выдадим вам новый.<br>
               Товар, не дом, конечно же.
             </p>
           </li>
 
-          <li class="service slider__item slider__item--closed">
+          <li class="service service--credit slider__item slider__item--closed">
             <h3 class="service__title">Кредит</h3>
 
             <p class="service__text">
-              Залезть в долговую яму стало проще! Кредитные консультанты
-              подберут
-              для вас наиболее выгодные
+              Залезть в долговую яму стало проще! Кредитные<br>
+              консультанты подберут для вас наиболее выгодные<br>
               условия кредита. Выгодные для нашего банка, разумеется.
             </p>
           </li>
@@ -365,25 +375,25 @@
         <ul class="vendors__items">
           <li>
             <a class="vendors__item" href="#">
-              <img class="vendors__logo" src="img/logo-1-grey.png" alt="DJI"
+              <img class="vendors__logo" src="img/logo-1.png" alt="DJI"
                 width="260" height="100">
             </a>
           </li>
           <li>
             <a class="vendors__item" href="#">
-              <img class="vendors__logo" src="img/logo-2-grey.png"
-                alt="SP Gadgets" width="260" height="100">
-            </a>
-          </li>
-          <li>
-            <a class="vendors__item" href="#">
-              <img class="vendors__logo" src="img/logo-3-grey.png" alt="GoPro"
+              <img class="vendors__logo" src="img/logo-2.png" alt="SP Gadgets"
                 width="260" height="100">
             </a>
           </li>
           <li>
             <a class="vendors__item" href="#">
-              <img class="vendors__logo" src="img/logo-4-grey.png" alt="VIVE"
+              <img class="vendors__logo" src="img/logo-3.png" alt="GoPro"
+                width="260" height="100">
+            </a>
+          </li>
+          <li>
+            <a class="vendors__item" href="#">
+              <img class="vendors__logo" src="img/logo-4.png" alt="VIVE"
                 width="260" height="100">
             </a>
           </li>
@@ -508,8 +518,8 @@
     </div>
   </footer>
 
-  <section class="feedback">
-    <div class="popup">
+  <div class="popup popup--closed">
+    <section class="feedback popup__window">
       <h2 class="visually-hidden">Форма обратной связи</h2>
 
       <form class="feedback__form form" action="https://echo.htmlacademy.ru"
@@ -541,20 +551,22 @@
       </form>
 
       <a href="/index.html" class="popup__close">Вернуться на страницу</a>
-    </div>
 
-  </section>
+    </section>
+  </div>
 
-  <section class="map">
-    <div class="popup">
+
+  <div class="popup popup--closed">
+    <section class="map popup__window">
       <h2 class="visually-hidden">Карта проезда</h2>
 
       <img class="map__image" src="img/map.png" alt="Улицв Строителей, дом 15"
         width="960" height="559">
 
       <a href="/index.html" class="popup__close">Вернуться на страницу</a>
-    </div>
-  </section>
+
+    </section>
+  </div>
 </body>
 
 </html>
