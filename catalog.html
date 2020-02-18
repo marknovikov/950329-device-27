@@ -22,7 +22,7 @@
               alt="Логотип интернет-магазина «Девайс»" width="163" height="35">
           </a>
 
-          <div class="navigation__row">
+          <div class="navigation__row navigation__row--first">
             <form class="search-form navigation__search-form"
               action="https://echo.htmlacademy.ru" method="get">
               <label class="visually-hidden" for="site-search">
@@ -53,7 +53,7 @@
             </div>
           </div>
 
-          <div class="navigation__row">
+          <div class="navigation__row navigation__row--second">
             <button class="navigation__link navigation__link--catalog"
               type="button">
               Каталог товаров</button>
@@ -76,28 +76,29 @@
           <div class="navigation__container catalog__categories">
             <ul class="catalog__items">
               <li>
-                <a class="catalog__link" href="#">Виртуальная реальность</a>
+                <a class="catalog__link" href="catalog.html">Виртуальная
+                  реальность</a>
               </li>
               <li>
-                <a class="catalog__link" href="#">Моноподы для
+                <a class="catalog__link">Моноподы для
                   селфи
                 </a>
               </li>
               <li>
-                <a class="catalog__link" href="#">Экшн-камеры</a>
+                <a class="catalog__link" href="catalog.html">Экшн-камеры</a>
               </li>
             </ul>
             <ul class="catalog__items">
               <li>
-                <a class="catalog__link" href="#">Фитнес-браслеты</a>
+                <a class="catalog__link" href="catalog.html">Фитнес-браслеты</a>
               </li>
               <li>
-                <a class="catalog__link" href="#">Умные часы</a>
+                <a class="catalog__link" href="catalog.html">Умные часы</a>
               </li>
             </ul>
             <ul class="catalog__items">
               <li>
-                <a class="catalog__link" href="#">Квадрокоптеры</a>
+                <a class="catalog__link" href="catalog.html">Квадрокоптеры</a>
               </li>
             </ul>
           </div>
@@ -128,12 +129,6 @@
     </div>
 
     <div class="products-container">
-      <div class="background">
-        <div class="background__header background__header--filters">
-        </div>
-        <div class="background__body background__body--filters"></div>
-      </div>
-
       <div class="catalog-page__columns">
         <section class="filters">
           <div class="filters__header">
@@ -145,22 +140,20 @@
             <fieldset class="filters__filter filter">
               <legend class="filter__name">Стоимость</legend>
 
-
-              <ol class="visually-hidden">
+              <ol class="price__inputs visually-hidden">
                 <li>
-                  <label for="filter__price__min">
+                  <label>
                     От
-                    <input class="filter__input" name="price_min"
-                      id="filter__price__min" type="number" value="0" min="0"
+                    <input class="price__value price__value--min"
+                      name="price_min" type="number" value="0" min="0"
                       max="10000">
                   </label>
                 </li>
-
                 <li>
-                  <label for="filter__price__max">
+                  <label>
                     До
-                    <input class="filter__input" name="price_max"
-                      id="filter__price__max" type="number" value="5000" min="0"
+                    <input class="price__value price__value--max"
+                      name="price_max" type="number" value="5000" min="0"
                       max="10000">
                   </label>
                 </li>
@@ -171,13 +164,21 @@
                   <div class="range__progress"></div>
 
                   <div class="range__thumb range__thumb--min">
-                    <p class="range__label">от 0</p>
                   </div>
 
                   <div class="range__thumb range__thumb--max">
-                    <p class="range__label">до 5000</p>
                   </div>
                 </div>
+                <ol class="range__labels">
+                  <li class="range__label range__label--min">
+                    От
+                    <span class="range__value">0</span>
+                  </li>
+                  <li class="range__label range__label--max">
+                    До
+                    <span class="range__value">5000</span>
+                  </li>
+                </ol>
               </div>
             </fieldset>
 
@@ -308,34 +309,39 @@
             </div>
           </section>
 
-          <section class="pagination catalog-page__pagination">
-            <h2 class="visually-hidden">Навигация по страницам каталога</h2>
+          <div class="catalog-page__pagination">
+            <section class="pagination">
+              <h2 class="visually-hidden">Навигация по страницам каталога</h2>
 
-            <a class="pagination__control pagination__control--prev" href="#">
-              Назад</a>
-            <a class="pagination__control pagination__control--next" href="#">
-              Вперед</a>
-            <ol class="pagination__pages">
-              <li>
-                <a class="pagination__page pagination__page--active" href="#">1
-                </a>
-              </li>
-              <li>
-                <a class="pagination__page" href="#">2</a>
-              </li>
-              <li>
-                <a class="pagination__page" href="#">3</a>
-              </li>
-            </ol>
-          </section>
+              <a class="pagination__control pagination__control--prev" href="#">
+                Назад</a>
+              <a class="pagination__control pagination__control--next" href="#">
+                Вперед</a>
+              <ol class="pagination__pages">
+                <li>
+                  <a class="pagination__page pagination__page--active" href="#">
+                    1
+                  </a>
+                </li>
+                <li>
+                  <a class="pagination__page" href="#">2</a>
+                </li>
+                <li>
+                  <a class="pagination__page" href="#">3</a>
+                </li>
+              </ol>
+            </section>
+          </div>
 
-          <section class="products">
+          <section class="products products__container">
             <h2 class="visually-hidden">Список моноподов для селфи</h2>
 
-            <ul class="products__items products__container">
+            <ul class="products__items">
               <li class="products__item product">
-                <h3 class="product__title">Любительская <span class="nobr">
-                    селфи-палка</span>
+                <h3 class="product__title">
+                  <a href="#">Любительская <span class="nobr">
+                      селфи-палка</span>
+                  </a>
                 </h3>
 
                 <div class="product__inner">
@@ -353,8 +359,10 @@
               </li>
 
               <li class="products__item product">
-                <h3 class="product__title">Профессиональная <span class="nobr">
-                    селфи-палка</span>
+                <h3 class="product__title">
+                  <a href="#">Профессиональная <span class="nobr">
+                      селфи-палка</span>
+                  </a>
                 </h3>
 
                 <div class="product__inner">
@@ -372,8 +380,10 @@
               </li>
 
               <li class="products__item product">
-                <h3 class="product__title">Непотопляемая <span class="nobr">
-                    селфи-палка</span>
+                <h3 class="product__title">
+                  <a href="#">Непотопляемая <span class="nobr">
+                      селфи-палка</span>
+                  </a>
                 </h3>
 
                 <div class="product__inner">
@@ -390,9 +400,11 @@
                 <p class="product__price">2 500 руб.</p>
               </li>
 
-              <li class="products__item product">
+              <li class="products__item product product--new">
                 <h3 class="product__title">
-                  <span class="nobr">Селфи-палка</span> «Следуй за мной»
+                  <a href="#">
+                    <span class="nobr">Селфи-палка</span> «Следуй за мной»
+                  </a>
                 </h3>
 
                 <div class="product__inner">
@@ -414,7 +426,12 @@
 
       </div>
 
-      <div class="background">
+      <div class="background background--left">
+        <div class="background__header background__header--filters">
+        </div>
+        <div class="background__body background__body--filters"></div>
+      </div>
+      <div class="background background--right">
         <div class="background__header background__header--products">
         </div>
         <div class="background__body background__body--products"></div>
@@ -491,8 +508,9 @@
 
         <section class="page-footer__copyright copyright">
           <h2 class="visually-hidden">Сайт разработан</h2>
-          <a class="copyright__link copyright__link--htmlacademy"
-            href="https://htmlacademy.ru">
+          <a href="https://htmlacademy.ru/intensive/htmlcss"
+            class="copyright__link copyright__link--htmlacademy" target="_blank"
+            rel="noreferrer noopener">
             <img class="copyright__logo" src="img/logo-html.svg"
               alt="HTML Academy" width="27" height="35">
           </a>

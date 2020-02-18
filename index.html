@@ -21,7 +21,7 @@
               alt="Логотип интернет-магазина «Девайс»" width="163" height="35">
           </a>
 
-          <div class="navigation__row">
+          <div class="navigation__row navigation__row--first">
             <form class="search-form navigation__search-form"
               action="https://echo.htmlacademy.ru" method="get">
               <label class="visually-hidden" for="site-search">
@@ -49,7 +49,7 @@
             </div>
           </div>
 
-          <div class="navigation__row">
+          <div class="navigation__row navigation__row--second">
             <button class="navigation__link navigation__link--catalog"
               type="button">
               Каталог товаров</button>
@@ -72,7 +72,8 @@
           <div class="navigation__container catalog__categories">
             <ul class="catalog__items">
               <li>
-                <a class="catalog__link" href="#">Виртуальная реальность</a>
+                <a class="catalog__link" href="catalog.html">Виртуальная
+                  реальность</a>
               </li>
               <li>
                 <a class="catalog__link" href="catalog.html">Моноподы для
@@ -80,20 +81,20 @@
                 </a>
               </li>
               <li>
-                <a class="catalog__link" href="#">Экшн-камеры</a>
+                <a class="catalog__link" href="catalog.html">Экшн-камеры</a>
               </li>
             </ul>
             <ul class="catalog__items">
               <li>
-                <a class="catalog__link" href="#">Фитнес-браслеты</a>
+                <a class="catalog__link" href="catalog.html">Фитнес-браслеты</a>
               </li>
               <li>
-                <a class="catalog__link" href="#">Умные часы</a>
+                <a class="catalog__link" href="catalog.html">Умные часы</a>
               </li>
             </ul>
             <ul class="catalog__items">
               <li>
-                <a class="catalog__link" href="#">Квадрокоптеры</a>
+                <a class="catalog__link" href="catalog.html">Квадрокоптеры</a>
               </li>
             </ul>
           </div>
@@ -269,7 +270,7 @@
         <ul class="categories__items">
           <li>
             <a class="categories__link categories__link--virtual-reality"
-              href="#">
+              href="catalog.html">
               Виртуальная реальность
             </a>
           </li>
@@ -281,25 +282,25 @@
           </li>
           <li>
             <a class="categories__link categories__link--action-cameras"
-              href="#">
+              href="catalog.html">
               Экшн-камеры
             </a>
           </li>
           <li>
             <a class="categories__link categories__link--fitness-bands"
-              href="#">
+              href="catalog.html">
               Фитнес-браслеты
             </a>
           </li>
           <li>
             <a class="categories__link categories__link--smart-watches"
-              href="#">
+              href="catalog.html">
               Умные часы
             </a>
           </li>
           <li>
             <a class="categories__link categories__link--quadrocopters"
-              href="#">
+              href="catalog.html">
               Квадрокоптеры
             </a>
           </li>
@@ -374,27 +375,39 @@
 
         <ul class="vendors__items">
           <li>
-            <a class="vendors__item" href="#">
+            <a href="https://www.dji.com/" target="_blank"
+              rel="noreferrer noopener" class="vendors__item">
               <img class="vendors__logo" src="img/logo-1.png" alt="DJI"
                 width="260" height="100">
+              <img class="vendors__logo vendors__logo--grey"
+                src="img/logo-1--grey.png" alt="DJI" width="260" height="100">
             </a>
           </li>
           <li>
-            <a class="vendors__item" href="#">
+            <a href="http://www.sp-gadgets.com/" target="_blank"
+              rel="noreferrer noopener" class="vendors__item">
               <img class="vendors__logo" src="img/logo-2.png" alt="SP Gadgets"
                 width="260" height="100">
+              <img class="vendors__logo vendors__logo--grey"
+                src="img/logo-2--grey.png" alt="DJI" width="260" height="100">
             </a>
           </li>
           <li>
-            <a class="vendors__item" href="#">
+            <a href="https://gopro.com/" target="_blank"
+              rel="noreferrer noopener" class="vendors__item">
               <img class="vendors__logo" src="img/logo-3.png" alt="GoPro"
                 width="260" height="100">
+              <img class="vendors__logo vendors__logo--grey"
+                src="img/logo-3--grey.png" alt="DJI" width="260" height="100">
             </a>
           </li>
           <li>
-            <a class="vendors__item" href="#">
+            <a href="https://www.vive.com/" target="_blank"
+              rel="noreferrer noopener" class="vendors__item">
               <img class="vendors__logo" src="img/logo-4.png" alt="VIVE"
                 width="260" height="100">
+              <img class="vendors__logo vendors__logo--grey"
+                src="img/logo-4--grey.png" alt="DJI" width="260" height="100">
             </a>
           </li>
         </ul>
@@ -432,7 +445,9 @@
           <p class="text">Вы можете забрать товар сами, заехав в наш офис.
             Заодно,
             вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <a href="#" class="contacts__map-link">
+          <a href="https://www.google.com/maps/place/Ulitsa+Stroiteley,+15,+Moskva,+119311/@55.6858498,37.5268518,15.47z/data=!4m5!3m4!1s0x46b54cf65f5c8955:0x694710ccd55501e!8m2!3d55.687031!4d37.529618"
+            target="_blank" rel="noreferrer noopener"
+            class="contacts__map-link">
             <img class="contacts__map-thumb" src="img/map-thumb.png"
               alt="Улица Строителей, дом 15" width="560" height="222">
           </a>
@@ -508,8 +523,9 @@
 
         <section class="page-footer__copyright copyright">
           <h2 class="visually-hidden">Сайт разработан</h2>
-          <a class="copyright__link copyright__link--htmlacademy"
-            href="https://htmlacademy.ru">
+          <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"
+            rel="noreferrer noopener"
+            class="copyright__link copyright__link--htmlacademy">
             <img class="copyright__logo" src="img/logo-html.svg"
               alt="HTML Academy" width="27" height="35">
           </a>
@@ -560,8 +576,11 @@
     <section class="map popup__window">
       <h2 class="visually-hidden">Карта проезда</h2>
 
-      <img class="map__image" src="img/map.png" alt="Улицв Строителей, дом 15"
-        width="960" height="559">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8996.722688202657!2d37.52685179935284!3d55.68584979981052!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20119311!5e0!3m2!1sen!2sru!4v1582267565301!5m2!1sen!2sru"
+        width="960" height="559" frameborder="0" style="border:0;"
+        allowfullscreen="">
+      </iframe>
 
       <a href="/index.html" class="popup__close">Вернуться на страницу</a>
 
