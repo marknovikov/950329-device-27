@@ -50,9 +50,47 @@
           </div>
 
           <div class="navigation__row navigation__row--second">
-            <button class="navigation__link navigation__link--catalog"
-              type="button">
-              Каталог товаров</button>
+            <div class="catalog-menu">
+              <button class="navigation__link catalog-menu__button"
+                type="button">
+                Каталог товаров</button>
+
+              <div class="navigation__catalog catalog-menu__catalog catalog">
+                <div class="catalog__categories navigation__container">
+                  <ul class="catalog__items">
+                    <li>
+                      <a class="catalog__link" href="catalog.html">Виртуальная
+                        реальность</a>
+                    </li>
+                    <li>
+                      <a class="catalog__link" href="catalog.html">Моноподы для
+                        селфи
+                      </a>
+                    </li>
+                    <li>
+                      <a class="catalog__link" href="catalog.html">Экшн-камеры
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="catalog__items">
+                    <li>
+                      <a class="catalog__link" href="catalog.html">
+                        Фитнес-браслеты</a>
+                    </li>
+                    <li>
+                      <a class="catalog__link" href="catalog.html">Умные часы
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="catalog__items">
+                    <li>
+                      <a class="catalog__link" href="catalog.html">Квадрокоптеры
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
             <ul class="navigation__items">
               <li class="navigation__item">
@@ -63,38 +101,6 @@
               </li>
               <li class="navigation__item">
                 <a class="navigation__link" href="#">Контакты</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="navigation__catalog catalog catalog--hidden">
-          <div class="navigation__container catalog__categories">
-            <ul class="catalog__items">
-              <li>
-                <a class="catalog__link" href="catalog.html">Виртуальная
-                  реальность</a>
-              </li>
-              <li>
-                <a class="catalog__link" href="catalog.html">Моноподы для
-                  селфи
-                </a>
-              </li>
-              <li>
-                <a class="catalog__link" href="catalog.html">Экшн-камеры</a>
-              </li>
-            </ul>
-            <ul class="catalog__items">
-              <li>
-                <a class="catalog__link" href="catalog.html">Фитнес-браслеты</a>
-              </li>
-              <li>
-                <a class="catalog__link" href="catalog.html">Умные часы</a>
-              </li>
-            </ul>
-            <ul class="catalog__items">
-              <li>
-                <a class="catalog__link" href="catalog.html">Квадрокоптеры</a>
               </li>
             </ul>
           </div>
@@ -534,8 +540,8 @@
     </div>
   </footer>
 
-  <div class="popup popup--closed">
-    <section class="feedback popup__window">
+  <div class="popup feedback popup--closed">
+    <section class="feedback__window popup__window">
       <h2 class="visually-hidden">Форма обратной связи</h2>
 
       <form class="feedback__form form" action="https://echo.htmlacademy.ru"
@@ -572,20 +578,23 @@
   </div>
 
 
-  <div class="popup popup--closed">
-    <section class="map popup__window">
+  <div class="popup map popup--closed">
+    <section class="map__window popup__window">
       <h2 class="visually-hidden">Карта проезда</h2>
 
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8996.722688202657!2d37.52685179935284!3d55.68584979981052!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20119311!5e0!3m2!1sen!2sru!4v1582267565301!5m2!1sen!2sru"
-        width="960" height="559" frameborder="0" style="border:0;"
-        allowfullscreen="">
+        width="960" height="559" allowfullscreen="">
+        <img class="map__image" src="img/map.png" width="960" heght="559"
+          alt="Офис компании по адресу ул. Строителей 15, Москва">
       </iframe>
 
       <a href="/index.html" class="popup__close">Вернуться на страницу</a>
 
     </section>
   </div>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
