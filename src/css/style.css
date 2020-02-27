@@ -2020,25 +2020,29 @@ textarea {
   order: -1;
 }
 
-.background__header {
+.background::before {
+  content: "";
+  display: block;
   min-height: 70px;
   width: 100%;
 }
 
-.background__header--filters {
+.background--left::before {
   background-color: #dbdbdb;
 }
 
-.background__header--products {
+.background--right::before {
   background-color: #ebebeb;
 }
 
-.background__body {
+.background::after {
+  content: "";
+  display: block;
   flex-grow: 1;
   width: 100%;
 }
 
-.background__body--filters {
+.background--left::after {
   background-color: #efefef;
 }
 
