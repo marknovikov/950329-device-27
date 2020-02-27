@@ -1583,11 +1583,15 @@ textarea {
   opacity: 0.6;
 }
 
+.filter__input:focus+.filter__label {
+  outline: 5px solid #f0c52e;
+}
+
 .filter__label:active {
   opacity: 1;
 }
 
-.filter__label:disabled {
+.filter__input:disabled+.filter__label {
   opacity: 0.25;
 }
 
