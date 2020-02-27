@@ -21,7 +21,7 @@
     "build:html": "htmlhint **/*.html",
     "beautify:css": "js-beautify src/css/**/*.css",
     "precss": "npm run beautify:css",
-    "postcss": "postcss src/css/**/*.css --use autoprefixer -d css",
+    "postcss": "postcss src/css/**/*.css -d css",
     "build:css": "npm-run-all precss postcss",
     "build:js": "babel src/js/**/*.js -d js --minified",
     "build": "npm-run-all -p build:*"
