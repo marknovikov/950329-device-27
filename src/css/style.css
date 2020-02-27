@@ -1224,22 +1224,31 @@ textarea {
 
 .vendors__item {
   display: block;
-  position: relative;
+  width: 260px;
+  height: 100px;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.vendors__item--dji {
+  background-image: url("../img/logo-1--grey.png");
+}
+
+.vendors__item--sp-gadgets {
+  background-image: url("../img/logo-2--grey.png");
+}
+
+.vendors__item--gopro {
+  background-image: url("../img/logo-3--grey.png");
+}
+
+.vendors__item--vive {
+  background-image: url("../img/logo-4--grey.png");
 }
 
 .vendors__item:not(:hover):not(:focus):not(:active) .vendors__logo {
   visibility: hidden;
-}
-
-.vendors__logo--grey {
-  position: absolute;
-  top: 0;
-  left: 0;
-  visibility: hidden;
-}
-
-.vendors__item:not(:hover):not(:focus):not(:active) .vendors__logo--grey {
-  visibility: visible;
 }
 
 .page-main__columns {
