@@ -1,0 +1,39 @@
+{
+  "name": "950329-device-27",
+  "version": "1.0.0",
+  "description": "- Студент: [Марк Новиков](https://up.htmlacademy.ru/htmlcss/27/user/950329). - Наставник: `[Денис Власов](https://htmlacademy.ru/profile/amaringo)`.",
+  "main": "postcss.config.js",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "autoprefixer": "^9.7.4",
+    "babel-preset-minify": "^0.5.1",
+    "cssnano": "^4.1.10",
+    "htmlhint": "^0.11.0",
+    "js-beautify": "^1.10.3",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0",
+    "stylelint": "^13.2.0",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "scripts": {
+    "build:html": "htmlhint **/*.html",
+    "beautify:css": "js-beautify src/css/**/*.css",
+    "precss": "npm run beautify:css",
+    "postcss": "postcss src/css/**/*.css --use autoprefixer -d css",
+    "build:css": "npm-run-all precss postcss",
+    "build:js": "babel src/js/**/*.js -d js --minified",
+    "build": "npm-run-all -p build:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marknovikov/950329-device-27.git"
+  },
+  "author": "Mark Novikov <marknovikov91@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marknovikov/950329-device-27/issues"
+  },
+  "homepage": "https://github.com/marknovikov/950329-device-27#readme"
+}

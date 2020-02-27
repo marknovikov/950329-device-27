@@ -9,7 +9,7 @@ class Field {
     this._element = element;
     this._validators = [element => element.validity.valid];
 
-    this._element.addEventListener("keyup", () => {
+    this._element.addEventListener("input", () => {
       this.valid();
     });
 
