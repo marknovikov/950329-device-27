@@ -9,7 +9,7 @@ class Field {
     this._element = element;
     this._validators = [element => element.validity.valid];
 
-    this._element.addEventListener("keyup", () => {
+    this._element.addEventListener("input", () => {
       this.valid();
     });
 
@@ -197,3 +197,29 @@ mapModalOpenButton.addEventListener("click", evt => {
 
   mapModal.open();
 });
+
+const addSliderControlsHandlers = (sliderControls, sliderItems) => {
+  sliderControls.forEach((control, idx) =>
+    control.addEventListener("click", evt => {
+      evt.preventDefault();
+
+      sliderItems.forEach(item => item.classList.add("slider__item--closed"));
+      sliderControls.forEach(control =>
+        control.classList.remove("slider__control--active")
+      );
+
+      sliderItems[idx].classList.remove("slider__item--closed");
+      control.classList.add("slider__control--active");
+    })
+  );
+};
+
+const promoSliderItems = [...document.querySelectorAll(".promo__item")];
+const promoSliderControls = [...document.querySelectorAll(".promo__control")];
+addSliderControlsHandlers(promoSliderControls, promoSliderItems);
+
+const serviceSliderItems = [...document.querySelectorAll(".service")];
+const serviceSliderControls = [
+  ...document.querySelectorAll(".services__control")
+];
+addSliderControlsHandlers(serviceSliderControls, serviceSliderItems);
