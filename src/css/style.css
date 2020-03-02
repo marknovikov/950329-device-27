@@ -43,10 +43,14 @@
  * GLOBAL NORMALIZATION AND RESETS
  */
 
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {
@@ -69,19 +73,6 @@ img {
 
 a {
   text-decoration: none;
-}
-
-button {
-  border: none;
-  background: none;
-  padding: 0;
-}
-
-a,
-button,
-input,
-textarea {
-  font: inherit;
 }
 
 /*
@@ -197,6 +188,8 @@ textarea {
   align-items: center;
   width: 200px;
   min-height: 40px;
+  border: none;
+  background: none;
 
   font-family: "Gilroy", "Arial Black", sans-serif;
   font-weight: 800;
@@ -459,6 +452,9 @@ textarea {
   z-index: 3;
   min-height: 40px;
   position: relative;
+  padding: 0;
+  border: none;
+  background: none;
   padding-right: 27px;
   cursor: pointer;
   user-select: none;
@@ -934,6 +930,9 @@ textarea {
 .promo__control {
   width: 12px;
   height: 12px;
+  padding: 0;
+  border: none;
+  background: none;
 }
 
 .promo__control {
@@ -1718,6 +1717,9 @@ textarea {
 }
 
 .sorting__type {
+  padding: 0;
+  border: none;
+  background: none;
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -1748,8 +1750,9 @@ textarea {
 }
 
 .sorting__toggle {
-  font-size: 0;
-  opacity: 0.3;
+  padding: 0;
+  border: none;
+  background: none;
   display: block;
   width: 12px;
   height: 12px;
@@ -1757,6 +1760,8 @@ textarea {
   background-position: center;
   cursor: pointer;
   user-select: none;
+  font-size: 0;
+  opacity: 0.3;
 }
 
 .sorting__toggle:hover,
