@@ -1661,9 +1661,6 @@ textarea {
 
 .catalog-page .page-main__wrapper {
   max-width: 852px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
   padding: 0;
   margin: 0;
 }
@@ -1789,7 +1786,6 @@ textarea {
 .catalog-page__pagination {
   margin-top: -10px;
   margin-bottom: 77px;
-  order: 2;
 }
 
 .pagination__control,
@@ -1952,6 +1948,7 @@ textarea {
   user-select: none;
 }
 
+.product__buttons:focus-within,
 .product__inner:hover .product__buttons {
   visibility: visible;
 }
@@ -1965,14 +1962,6 @@ textarea {
 .product__buttons a:focus,
 .product__buttons a:active {
   opacity: 1;
-}
-
-.product__buttons .product__compare:focus:not(:active) {
-  background-color: rgba(239, 239, 239, 0.7);
-}
-
-.product__buttons .a:hover,
-.product__buttons .a:focus {
   visibility: visible;
 }
 
