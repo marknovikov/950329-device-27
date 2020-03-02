@@ -351,11 +351,11 @@ textarea {
 
 .user-links {
   display: flex;
-  align-items: center;
 }
 
 .navigation__user-links {
   min-width: 500px;
+  padding-top: 8px;
 }
 
 .user-links>.link {
